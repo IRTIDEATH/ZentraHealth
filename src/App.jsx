@@ -3,8 +3,6 @@ import Hero from "./components/Hero"
 import Nub1 from "./components/Nub1"
 import Nub2 from "./components/Nub2"
 import Nub3 from "./components/Nub3"
-import Test from "./components/Test"
-import Test2 from "./components/Test2"
 
 
 function App() {
@@ -13,8 +11,6 @@ function App() {
     <div className="w-full overflow-hidden">
       <Hero/>
       <About/>
-      {/* <Test/>
-      <Test2/> */}
       <Nub1/>
       <Nub2/>
       <Nub3/>
