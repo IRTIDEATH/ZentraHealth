@@ -7,19 +7,18 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const Nub1 = () => {
+const Section5 = () => {
   return (
-    <div className="w-full bg-[#FD5852] md:rounded-tr-[6rem] rounded-tr-[5rem] pb-16 md:pb-28">
-      <div className="flex items-center justify-end pt-2">
+    <div className="w-full bg-[#FD5852] pb-16 md:pb-28">
+      <div className="flex items-center justify-center pt-2">
         <div className="absolute flex pr-16">
-          <img
-            src={plus}
-            alt=""
-            className="w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain"
-          />
+          <div className="flex flex-col p-9 rounded-3xl bg-[#ECFFFD] text-center space-y-3">
+            <h1 className="text-[#1E1E1E] font-bold text-2xl">Apa itu... <br/> <span className="text-[#FD5852]">Gerakan Sekolah Sehat</span></h1>
+            <p className="text-[#1E1E1E] text-xl w-[710px]">Gerakan Sekolah Sehat (GSS), adalah upaya bersama yang dilakukan secara terus-menerus terkait pentingnya penerapan Sekolah Sehat yang berfokus pada Sehat Bergizi, Sehat Fisik dan Sehat Imunisasi di satuan pendidikan. Namun, di samping itu kita juga perlu memperhatikan Sehat Mental dan Sehat Lingkungan sebagai faktor pendukung serta pelengkap Sekolah Sehat.</p>
+          </div>
         </div>
       </div>
-      <div className="flex flex-col md:px-16 px-10 py-8 space-y-10">
+      <div className="flex flex-col md:px-16 px-7 pb-5 pt-32 space-y-10">
         <div className="flex flex-col pt-12 space-y-5">
           <h1 className="md:text-3xl text-xl text-white font-bold">
             Sehat Fisik
@@ -69,4 +68,4 @@ const Nub1 = () => {
   );
 };
 
-export default Nub1;
+export default Section5;

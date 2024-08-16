@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const Nub2 = () => {
+const Section4 = () => {
   return (
     <div className="bg-[#FD5852]">
       <div className="w-full bg-[#ECFFFD] md:rounded-tl-[6rem] rounded-tl-[5rem] pb-16 md:pb-28">
@@ -20,7 +20,7 @@ const Nub2 = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col md:px-16 px-10 py-8 space-y-10">
+        <div className="flex flex-col md:px-16 px-7 py-5 space-y-10">
           <div className="flex flex-col pt-12 space-y-5">
             <h1 className="md:text-3xl text-xl text-[#1E1E1E] font-bold">
               Sehat Fisik
@@ -80,4 +80,4 @@ const Nub2 = () => {
   );
 };
 
-export default Nub2;
+export default Section4;

@@ -1,8 +1,11 @@
 import About from "./components/About"
 import Hero from "./components/Hero"
-import Nub1 from "./components/Nub1"
-import Nub2 from "./components/Nub2"
-import Nub3 from "./components/Nub3"
+import Section1 from "./components/Section1"
+import Section2 from "./components/Section2"
+import Section3 from "./components/Section3"
+import Section4 from "./components/Section4"
+import Section5 from "./components/Section5"
+import Welcome from "./components/Welcome"
 
 
 function App() {
@@ -10,10 +13,13 @@ function App() {
   return (
     <div className="w-full overflow-hidden">
       <Hero/>
-      <About/>
-      <Nub1/>
-      <Nub2/>
-      <Nub3/>
+      {/* <About/> */}
+      <Welcome/>
+      <Section5/>
+      <Section4/>
+      <Section1/>
+      <Section2/>
+      <Section3/>
     </div>
   )
 }
