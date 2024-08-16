@@ -2,6 +2,7 @@ import About from "./components/About"
 import Hero from "./components/Hero"
 import Nub1 from "./components/Nub1"
 import Nub2 from "./components/Nub2"
+import Nub3 from "./components/Nub3"
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <About/>
       <Nub1/>
       <Nub2/>
+      <Nub3/>
     </div>
   )
 }

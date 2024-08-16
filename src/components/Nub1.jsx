@@ -9,13 +9,13 @@ import {
 
 const Nub1 = () => {
   return (
-    <div className="w-full h-[100vh] bg-[#FD5852] rounded-tr-[6rem]">
+    <div className="w-full h-[100vh] bg-[#FD5852] md:rounded-tr-[6rem] rounded-tr-[5rem]">
       <div className="static flex items-center justify-end pt-2">
         <div className="absolute flex pr-16">
-          <img src={plus} alt="" className="w-[120px] h-[120px] md:w-[170px] md:h-[170px] object-contain"/>
+          <img src={plus} alt="" className="w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain"/>
         </div>
       </div>
-      <div className="flex flex-col px-16 py-10 space-y-10">
+      <div className="flex flex-col md:px-16 px-10 py-10 space-y-10">
         <div className="flex flex-col pt-12 space-y-5">
           <h1 className="md:text-5xl text-3xl text-white font-bold">
             Sehat Fisik
