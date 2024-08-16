@@ -1,14 +1,10 @@
 export const navItems = [
     {
-      name: "Home",
+      name: "Beranda",
       link: "/",
     },
     {
-      name: "About",
+      name: "Tentang",
       link: "/about",
-    },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
+    }
   ];
