@@ -7,7 +7,7 @@ import Nub2 from "./components/Nub2"
 function App() {
 
   return (
-    <div className="mx-auto">
+    <div className="w-full">
       <Hero/>
       <About/>
       <Nub1/>
