@@ -69,3 +69,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+.layer1 {
+  background-image: url('./assets/layer/layerplus.svg');
+}
+
+.spacer {
+  aspect-ratio: 900/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
