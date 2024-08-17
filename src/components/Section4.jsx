@@ -9,14 +9,14 @@ import {
 
 const Section4 = () => {
   return (
-    <div className="bg-[#FD5852]">
+    <div className="bg-[#FD5852]" id="bergizi">
       <div className="w-full bg-[#ECFFFD] md:rounded-tl-[6rem] rounded-tl-[5rem] pb-16 md:pb-28">
         <div className="flex items-center justify-start pt-2">
           <div className="absolute flex pl-16">
             <img
               src={pluss}
               alt=""
-              className="w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain"
+              className="w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain shadowplus"
             />
           </div>
         </div>

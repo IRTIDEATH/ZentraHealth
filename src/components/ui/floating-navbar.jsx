@@ -74,10 +74,11 @@ export const FloatingNav = ({ navItems }) => {
               Konten
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem>Fisik</DropdownMenuItem>
-              <DropdownMenuItem>Bergizi</DropdownMenuItem>
-              <DropdownMenuItem>Imunisasi</DropdownMenuItem>
-              <DropdownMenuItem>Lingkungan</DropdownMenuItem>
+              <DropdownMenuItem><a href="#fisik">Fisik</a></DropdownMenuItem>
+              <DropdownMenuItem><a href="#bergizi">Bergizi</a></DropdownMenuItem>
+              <DropdownMenuItem><a href="#imunisasi">Imunisasi</a></DropdownMenuItem>
+              <DropdownMenuItem><a href="#mental">Mental</a></DropdownMenuItem>
+              <DropdownMenuItem><a href="#lingkungan">Lingkungan</a></DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <button className="border text-sm font-medium relative border-[#B8B8B8] dark:border-white/[0.2] text-black dark:text-white px-6 py-2 rounded-full">

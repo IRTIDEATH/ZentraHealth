@@ -9,14 +9,14 @@ import {
 
 const Section3 = () => {
   return (
-    <div className="bg-[#ECFFFD]">
+    <div className="bg-[#ECFFFD]" id="lingkungan">
       <div className="w-full bg-[#FD5852] md:rounded-tr-[6rem] rounded-tr-[5rem]">
         <div className="flex items-center justify-end pt-2">
           <div className="absolute flex pr-16">
             <img
               src={plus}
               alt=""
-              className="w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain"
+              className="w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain shadowplus"
             />
           </div>
         </div>
@@ -41,7 +41,7 @@ const Section3 = () => {
               collapsible
               className="w-full text-[#ECFFFD]"
             >
-              <AccordionItem value="item-1">
+              <AccordionItem value="item-1" className="border-b border-[#ECFFFD]">
                 <AccordionTrigger className="md:text-xl text-base">
                   Is it accessible?
                 </AccordionTrigger>
@@ -49,7 +49,7 @@ const Section3 = () => {
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="item-2">
+              <AccordionItem value="item-2" className="border-b border-[#ECFFFD]">
                 <AccordionTrigger className="md:text-xl text-base">
                   Is it accessible?
                 </AccordionTrigger>
@@ -57,7 +57,7 @@ const Section3 = () => {
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent>
               </AccordionItem>
-              <AccordionItem value="item-3">
+              <AccordionItem value="item-3" className="border-b border-[#ECFFFD]">
                 <AccordionTrigger className="md:text-xl text-base">
                   Is it accessible?
                 </AccordionTrigger>

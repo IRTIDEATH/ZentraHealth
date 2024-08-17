@@ -70,6 +70,10 @@
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .layer1 {
   background-image: url('./assets/layer/layerplus.svg');
 }
@@ -80,4 +84,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.shadowplus {
+  filter: drop-shadow(0px 0px 5px #393939);
 }
