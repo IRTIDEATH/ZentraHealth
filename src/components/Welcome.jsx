@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     <div className="w-full">
       <div className="flex flex-col md:px-16 px-7 py-60 leading-none">
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-2xl md:text-4xl font-bold">
           Bersama <span className="text-[#FD5852]">ZentraHealth</span> <br />
           Wujudkan{" "}
           <span className="text-[#FD5852]">
