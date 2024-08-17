@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Cases from "./components/Cases";
 import Hero from "./components/Hero";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
@@ -18,6 +19,7 @@ function App() {
       <Section1 />
       <Section2 />
       <Section3 />
+      <Cases/>
     </div>
   );
 }

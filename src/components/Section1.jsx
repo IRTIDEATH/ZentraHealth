@@ -21,16 +21,18 @@ const Section1 = () => {
           </div>
         </div>
         <div className="flex flex-col md:px-16 px-7 py-5 space-y-10">
-          <div className="flex flex-col pt-12 space-y-5">
-            <h1 className="md:text-3xl text-xl text-white font-bold">
-              Sehat Fisik
-            </h1>
-            <p className="text-white md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
-              Sebagai upaya pengurangan resiko obesitas serta meningkatkan
-              kualitas kesehatan fisik peserta didik, maka perlu untuk
-              dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
-              fisik yang dapat kita upayakan di lingkungan sekolah?
-            </p>
+          <div className="flex flex-col md:flex-row pt-12">
+            <div className="flex flex-col space-y-5">
+              <h1 className="md:text-3xl text-xl text-white font-bold">
+                Sehat Fisik
+              </h1>
+              <p className="text-white md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
+                Sebagai upaya pengurangan resiko obesitas serta meningkatkan
+                kualitas kesehatan fisik peserta didik, maka perlu untuk
+                dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
+                fisik yang dapat kita upayakan di lingkungan sekolah?
+              </p>
+            </div>
           </div>
 
           <div className="md:px-16 px-9 pt-5 pb-9 border-2 border-white rounded-2xl">

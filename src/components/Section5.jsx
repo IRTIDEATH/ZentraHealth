@@ -13,22 +13,34 @@ const Section5 = () => {
       <div className="flex items-center justify-center pt-2">
         <div className="absolute flex items-center justify-center px-4 md:px-12">
           <div className="flex flex-col p-9 rounded-3xl bg-[#ECFFFD] text-center items-center justify-center space-y-3">
-            <h1 className="text-[#1E1E1E] font-bold text-2xl">Apa itu... <br/> <span className="text-[#FD5852]">Gerakan Sekolah Sehat</span></h1>
-            <p className="text-[#1E1E1E] text-xs md:text-lg text-wrap ">Gerakan Sekolah Sehat (GSS), adalah upaya bersama yang dilakukan secara terus-menerus terkait pentingnya penerapan Sekolah Sehat yang berfokus pada Sehat Bergizi, Sehat Fisik dan Sehat Imunisasi di satuan pendidikan. Namun, di samping itu kita juga perlu memperhatikan Sehat Mental dan Sehat Lingkungan sebagai faktor pendukung serta pelengkap Sekolah Sehat.</p>
+            <h1 className="text-[#1E1E1E] font-bold text-2xl">
+              Apa itu... <br />{" "}
+              <span className="text-[#FD5852]">Gerakan Sekolah Sehat</span>
+            </h1>
+            <p className="text-[#1E1E1E] text-xs md:text-lg text-wrap ">
+              Gerakan Sekolah Sehat (GSS), adalah upaya bersama yang dilakukan
+              secara terus-menerus terkait pentingnya penerapan Sekolah Sehat
+              yang berfokus pada Sehat Bergizi, Sehat Fisik dan Sehat Imunisasi
+              di satuan pendidikan. Namun, di samping itu kita juga perlu
+              memperhatikan Sehat Mental dan Sehat Lingkungan sebagai faktor
+              pendukung serta pelengkap Sekolah Sehat.
+            </p>
           </div>
         </div>
       </div>
       <div className="flex flex-col md:px-16 px-7 pb-5 pt-32 space-y-10">
-        <div className="flex flex-col pt-12 space-y-5">
-          <h1 className="md:text-3xl text-xl text-white font-bold">
-            Sehat Fisik
-          </h1>
-          <p className="text-white md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
-            Sebagai upaya pengurangan resiko obesitas serta meningkatkan
-            kualitas kesehatan fisik peserta didik, maka perlu untuk
-            dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
-            fisik yang dapat kita upayakan di lingkungan sekolah?
-          </p>
+        <div className="flex flex-col md:flex-row pt-12">
+          <div className="flex flex-col space-y-5">
+            <h1 className="md:text-3xl text-xl text-white font-bold">
+              Sehat Fisik
+            </h1>
+            <p className="text-white md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
+              Sebagai upaya pengurangan resiko obesitas serta meningkatkan
+              kualitas kesehatan fisik peserta didik, maka perlu untuk
+              dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
+              fisik yang dapat kita upayakan di lingkungan sekolah?
+            </p>
+          </div>
         </div>
 
         <div className="md:px-16 px-9 pt-5 pb-9 border-2 border-white rounded-2xl">
