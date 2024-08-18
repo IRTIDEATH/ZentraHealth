@@ -51,26 +51,26 @@ const Section5 = () => {
           >
             <AccordionItem value="item-1" className="border-b border-[#ECFFFD]">
               <AccordionTrigger className="md:text-xl text-base">
-                Is it accessible?
+                Senam Bersama
               </AccordionTrigger>
               <AccordionContent className="md:text-lg text-sm">
-                Yes. It adheres to the WAI-ARIA design pattern.
+              Kegiatan senam rutin, sangat membantu dalam penjagaan kualitas fisik peserta didik. Senam rutin idealnya dilaksanakan 1 kali dalam 1 bulan. Senam yang dilaksanakan dapat berupa Senam Kesehatan Jasmani (SKJ) maupun Senam Kreasi. Pelaksanaan senam yang dilakukan secara bersama dengan jadwal yang tertata merupakan suatu langkah yang menghemat waktu serta efektif.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2" className="border-b border-[#ECFFFD]">
               <AccordionTrigger className="md:text-xl text-base">
-                Is it accessible?
+              4L (Lompat, Lari, Lempar, Loncat)
               </AccordionTrigger>
               <AccordionContent className="md:text-lg text-sm">
-                Yes. It adheres to the WAI-ARIA design pattern.
+              Penerapan 4L biasanya dapat dilakukan pada saat jadwal mata pelajaran Pendidikan Jasmani, Olahraga, dan Kesehatan (PJOK). Frekuensi kegiatannya paling ideal dilaksanakan 1 kali dalam 1 pekan.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3" className="border-b border-[#ECFFFD]">
               <AccordionTrigger className="md:text-xl text-base">
-                Is it accessible?
+                Permainan Tradisional
               </AccordionTrigger>
               <AccordionContent className="md:text-lg text-sm">
-                Yes. It adheres to the WAI-ARIA design pattern.
+              Permainan tradisional saat ini sudah terbilang sangat jarang dilaksanakan di lingkungan sekolah. Sebagai penggantinya, pihak sekolah (bisa bekerjasama dengan organisasi di sekolah) mengadakan suatu ajang kompetisi yang melibatkan aktivitas fisik. Seperti mengadakan pertandingan futsal, pertandingan basket, serta cabang olahraga lainnya.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
