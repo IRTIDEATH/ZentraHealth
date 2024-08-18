@@ -1,11 +1,11 @@
 import React from "react";
-import plus from "/assets/icon/plus.svg";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import DumbellCanvas from "./canvas/Dumbell";
 
 const Section5 = () => {
   return (
@@ -28,8 +28,8 @@ const Section5 = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:px-16 px-7 pb-5 pt-32 space-y-10">
-        <div id="fisik" className="flex flex-col md:flex-row pt-12">
+      <div className="flex flex-col md:px-16 px-7 pb-5 pt-32 space-y-7 md:space-y-16">
+        <div id="fisik" className="flex flex-col md:flex-row pt-12 items-center justify-between">
           <div className="flex flex-col space-y-5">
             <h1 className="md:text-3xl text-xl text-[#ECFFFD] font-bold">
               Sehat Fisik
@@ -40,6 +40,9 @@ const Section5 = () => {
               dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
               fisik yang dapat kita upayakan di lingkungan sekolah?
             </p>
+          </div>
+          <div className="w-[400px] mt-6">
+            <DumbellCanvas/>
           </div>
         </div>
 
