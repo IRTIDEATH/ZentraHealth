@@ -25,13 +25,11 @@ const Section1 = () => {
           <div className="flex flex-col md:flex-row pt-12">
             <div className="flex flex-col space-y-5">
               <h1 className="md:text-3xl text-xl text-[#ECFFFD] font-bold">
-                Sehat Fisik
+                Sehat Imunisasi
               </h1>
               <p className="text-[#ECFFFD] md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
-                Sebagai upaya pengurangan resiko obesitas serta meningkatkan
-                kualitas kesehatan fisik peserta didik, maka perlu untuk
-                dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
-                fisik yang dapat kita upayakan di lingkungan sekolah?
+              Meningkatkan capaian imunisasi peserta didik agar mendapat imunisasi dasar yang lengkap,
+              Sehat Imunisasi bertujuan untuk membantu peserta didik mencapai imunisasi dasar yang lengkap.
               </p>
             </div>
             <div className="w-[400px] mt-6">
@@ -50,10 +48,10 @@ const Section1 = () => {
                 className="border-b border-[#ECFFFD]"
               >
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                  Mengenal Imunisasi
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                Imunisasi adalah suatu upaya untuk menimbulkan/meningkatkan kekebalan seseorang secara aktif terhadap suatu penyakit sehingga bila suatu saat terpajan dengan penyakit tersebut tidak akan sakit atau hanya mengalami sakit ringan. Penyakit tersebut dikenal sebagai Penyakit-penyakit yang Dapat Dicegah Dengan Imunisasi (PD3I).
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -61,10 +59,10 @@ const Section1 = () => {
                 className="border-b border-[#ECFFFD]"
               >
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                  Bulan Imunisasi
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                Bulan Imunisasi Anak Sekolah adalah kegiatan nasional meliputi pemberian imunisasi pada anak usia SD/MI/bentuk lain yang sederajat yang dilaksanakan dua kali setahun setiap bulan Agustus untuk imunisasi Campak Rubela dan HPV; serta pada bulan November untuk imunisasi DT dan Td.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -72,10 +70,11 @@ const Section1 = () => {
                 className="border-b border-[#ECFFFD]"
               >
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Sasaran, Jenis, dan Jadwal Imunisasi
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                <img src="/public/assets/content/sehatimun.svg" alt="" srcset="" />
+                <a href="https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/Sasaran-Imunisasi-1-1536x864.png" class="text-gray-500 italic">https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/Sasaran-Imunisasi-1-1536x864.png</a>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

@@ -25,13 +25,11 @@ const Section4 = () => {
           <div className="flex flex-col md:flex-row-reverse pt-12 items-center justify-between">
             <div className="flex flex-col space-y-5">
               <h1 className="md:text-3xl text-xl text-[#1E1E1E] font-bold">
-                Sehat Fisik
+                Sehat Bergizi
               </h1>
               <p className="text-[#1E1E1E] md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
-                Sebagai upaya pengurangan resiko obesitas serta meningkatkan
-                kualitas kesehatan fisik peserta didik, maka perlu untuk
-                dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
-                fisik yang dapat kita upayakan di lingkungan sekolah?
+              Meningkatkan kesehatan peserta didik melalui edukasi pola makan yang tepat dan bergizi.
+              Guna meningkatkan derajat kesehatan peserta didik, maka perlu diterapkannya pola makan yang tepat dan konsumsi makanan bergizi. Bagaimana langkah yang perlu kita gerakkan untuk mencapai kondisi kesehatan peserta didik yang ideal?
               </p>
             </div>
             <div className="w-[400px] mt-6">
@@ -50,10 +48,15 @@ const Section4 = () => {
                 className="border-b border-[#1E1E1E]"
               >
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Edukasi Kegiatan Sehat Bergizi
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                ● Pembiasaan makan dan minum dengan gizi seimbang termasuk minum air putih, makan buah dan sayur setiap hari.<br></br>
+                ● Peningkatan pemahaman Gizi Seimbang (Isi Piringku).<br></br>
+                ● Meminimalisir konsumsi makanan cepat saji, berpengawet, tinggi gula dan kolesterol.<br></br>
+                ● Membina kantin yang sehat.
+
+
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -61,10 +64,12 @@ const Section4 = () => {
                 className="border-b border-[#1E1E1E]"
               >
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Isi Piringku.
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  <img src="/public/assets/content/isipiring1.svg" alt="" srcset="" />
+                  <a href="https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/isi-piringku-1-1024x1024.png" class="text-gray-500 italic">https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/isi-piringku-1-1024x1024.png</a><br/><br/>
+                  Dalam satu piring setiap kali makan, setengah piring diisi dengan sayur dan buah, sedangkan setengah lainnya diisi dengan makanan pokok dan lauk pauk. Tak lupa juga untuk mengonsumsi 8 gelas air setiap hari, melakukan aktivitas fisik 30 menit setiap hari, dan mencuci tangan dengan air dan sabun sebelum dan setelah makan.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -72,22 +77,17 @@ const Section4 = () => {
                 className="border-b border-[#1E1E1E]"
               >
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Komponen Kantin Sehat
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Consequuntur eius hic tenetur sapiente, saepe, enim aspernatur
-                  sint at vitae possimus similique ratione explicabo dolorum
-                  soluta necessitatibus incidunt natus exercitationem eaque
-                  facilis deserunt, perferendis harum minima iure! Quo accusamus
-                  esse quas iste eveniet exercitationem laudantium dolorem eaque
-                  id delectus, rem neque vitae eos quia natus asperiores
-                  obcaecati accusantium dolor inventore enim? Maiores
-                  accusantium quam non consectetur! Iusto itaque cum distinctio
-                  inventore. Cumque quia laudantium consectetur harum accusamus?
-                  Quisquam ipsam itaque accusantium quas amet, voluptas
-                  nesciunt, pariatur nihil reiciendis hic neque obcaecati sit
-                  nisi illum, totam ullam eius vero iste exercitationem ut.
+                <img src="/public/assets/content/isipiring2.svg" alt="" srcset="" />
+                <a href="https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/4-pilar-kantin-sehat-sekolah-1024x1024.png" class="text-gray-500 italic">https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/4-pilar-kantin-sehat-sekolah-1024x1024.png
+                </a><br/><br/>
+                    ● Komitmen dan Manajemen Sekolah : Memonitor konsumsi jajanan yang disediakan di kantin sekolah.
+                <br/>● Sumber Daya Manusia : Para penjual memiliki pengetahuan serta keterampilan mengelola kantin dan jajanan sehat di sekolah.
+                <br/>● Sarana dan Prasarana : Menjamin kebersihan peralatan makan di kantin sekolah serta lingkungan kantin.
+                <br/>● Mutu Pangan : Jajanan yang dijual wajib memenuhi standar aman, sehat, serta bergizi.
+
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
