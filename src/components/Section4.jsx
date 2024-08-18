@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import BuahCanvas from "./canvas/Buah";
 
 const Section4 = () => {
   return (
@@ -16,12 +17,12 @@ const Section4 = () => {
             <img
               src={pluss}
               alt=""
-              className="w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain shadowplus"
+              className="w-[90px] h-[90px] md:w-[140px] md:h-[140px] object-contain shadowplus"
             />
           </div>
         </div>
-        <div className="flex flex-col md:px-16 px-7 py-5 space-y-10">
-          <div className="flex flex-col md:flex-row pt-12">
+        <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-16">
+          <div className="flex flex-col md:flex-row-reverse pt-12 items-center justify-between">
             <div className="flex flex-col space-y-5">
               <h1 className="md:text-3xl text-xl text-[#1E1E1E] font-bold">
                 Sehat Fisik
@@ -32,6 +33,9 @@ const Section4 = () => {
                 dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
                 fisik yang dapat kita upayakan di lingkungan sekolah?
               </p>
+            </div>
+            <div className="w-[400px] mt-6">
+              <BuahCanvas/>
             </div>
           </div>
 

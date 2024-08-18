@@ -11,12 +11,11 @@ const Dumbells = ({ isMobile }) => {
 
   return (
     <mesh>
-      {/* <ambientLight intensity={0.3} /> */}
       <Lights />
       <primitive
         object={dumbel.scene}
         key={dumbel}
-        scale={isMobile ? 1.5 : 2}
+        scale={isMobile ? 1.3 : 2}
         position={isMobile ? [0, -3, 0] : [0, -4.50, 0]}
       />
     </mesh>

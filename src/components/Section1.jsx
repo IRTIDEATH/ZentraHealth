@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import SuntikanCanvas from "./canvas/Suntikan";
 
 const Section1 = () => {
   return (
@@ -20,7 +21,7 @@ const Section1 = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col md:px-16 px-7 py-5 space-y-10">
+        <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-16">
           <div className="flex flex-col md:flex-row pt-12">
             <div className="flex flex-col space-y-5">
               <h1 className="md:text-3xl text-xl text-[#ECFFFD] font-bold">
@@ -32,6 +33,9 @@ const Section1 = () => {
                 dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
                 fisik yang dapat kita upayakan di lingkungan sekolah?
               </p>
+            </div>
+            <div className="w-[400px] mt-6">
+              <SuntikanCanvas/>
             </div>
           </div>
 
