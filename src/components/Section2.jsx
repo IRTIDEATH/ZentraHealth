@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import HeartBrainCanvas from "./canvas/HeartBrain";
 
 const Section2 = () => {
   return (
@@ -20,8 +21,8 @@ const Section2 = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col md:px-16 px-7 py-5 space-y-10">
-          <div className="flex flex-col md:flex-row pt-12">
+        <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-16">
+          <div className="flex flex-col md:flex-row-reverse pt-12 items-center justify-between">
             <div className="flex flex-col space-y-5">
               <h1 className="md:text-3xl text-xl text-[#1E1E1E] font-bold">
                 Sehat Mental
@@ -29,6 +30,9 @@ const Section2 = () => {
               <p className="text-[#1E1E1E] md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
               Mengedukasi para peserta didik dan pihak sekolah terkait pentingnya menjaga mental yang sehat di kalangan anak-anak hingga remaja. Kesehatan mental yang baik adalah kondisi ketika batin kita berada dalam keadaan tentram dan tenang, sehingga memungkinkan kita untuk menikmati kehidupan sehari-hari. Orang yang kesehatan mentalnya terganggu akan mengalami gangguan suasana hati, kemampuan berpikir, serta kendali emosi yang bisa mengarah pada perilaku buruk.
               </p>
+            </div>
+            <div className="w-[400px] mt-6 ml-0 md:ml-4">
+              <HeartBrainCanvas/>
             </div>
           </div>
 

@@ -16,7 +16,7 @@ const Dumbells = ({ isMobile }) => {
         object={dumbel.scene}
         key={dumbel}
         scale={isMobile ? 1.3 : 1.7}
-        position={isMobile ? [1.8, 0.2, 0] : [2, 1, 0]}
+        position={isMobile ? [0, 0.2, 0] : [0, 1, 0]}
       />
     </mesh>
   );

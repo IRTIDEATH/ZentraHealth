@@ -15,8 +15,8 @@ const Suntikans = ({ isMobile }) => {
       <primitive
         object={suntikan.scene}
         key={suntikan}
-        scale={isMobile ? 1.3 : 2}
-        position={isMobile ? [0, -3, 0] : [0, -4.50, 0]}
+        scale={isMobile ? 1.7 : 2.2}
+        position={isMobile ? [0, -5, 0] : [0, -4.50, 0]}
       />
     </mesh>
   );
@@ -46,7 +46,7 @@ const SuntikanCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [40, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

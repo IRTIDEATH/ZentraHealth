@@ -22,7 +22,7 @@ const Section1 = () => {
           </div>
         </div>
         <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-16">
-          <div className="flex flex-col md:flex-row pt-12">
+          <div className="flex flex-col md:flex-row pt-12 items-center justify-between">
             <div className="flex flex-col space-y-5">
               <h1 className="md:text-3xl text-xl text-[#ECFFFD] font-bold">
                 Sehat Imunisasi
@@ -32,7 +32,7 @@ const Section1 = () => {
               Sehat Imunisasi bertujuan untuk membantu peserta didik mencapai imunisasi dasar yang lengkap.
               </p>
             </div>
-            <div className="w-[400px] mt-6">
+            <div className="w-[400px] mt-6 ml-0 md:mr-6">
               <SuntikanCanvas/>
             </div>
           </div>

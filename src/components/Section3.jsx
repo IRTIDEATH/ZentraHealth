@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import TrashCanvas from "./canvas/Trash";
 
 const Section3 = () => {
   return (
@@ -20,8 +21,8 @@ const Section3 = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col md:px-16 px-7 py-5 space-y-10">
-          <div className="flex flex-col md:flex-row pt-12">
+        <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-16">
+          <div className="flex flex-col md:flex-row pt-12 items-center justify-between">
             <div className="flex flex-col space-y-5">
               <h1 className="md:text-3xl text-xl text-white font-bold">
                 Sehat Lingkungan
@@ -29,6 +30,9 @@ const Section3 = () => {
               <p className="text-white md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
               Menggalakkan perilaku hidup yang dapat membantu meningkatkan kualitas lingkungan sekolah yang bersih dan sehat. Pelaksanaan perilaku hidup bersih dan sehat di sekolah merupakan salah satu upaya untuk membantu mewujudkan Gerakan Sekolah Sehat. Beberapa kegiatan yang dapat dilakukan diantaranya seperti dibawah ini.
               </p>
+            </div>
+            <div className="w-[400px] mt-6">
+              <TrashCanvas/>
             </div>
           </div>
 
