@@ -24,13 +24,10 @@ const Section2 = () => {
           <div className="flex flex-col md:flex-row pt-12">
             <div className="flex flex-col space-y-5">
               <h1 className="md:text-3xl text-xl text-[#1E1E1E] font-bold">
-                Sehat Fisik
+                Sehat Mental
               </h1>
               <p className="text-[#1E1E1E] md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
-                Sebagai upaya pengurangan resiko obesitas serta meningkatkan
-                kualitas kesehatan fisik peserta didik, maka perlu untuk
-                dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
-                fisik yang dapat kita upayakan di lingkungan sekolah?
+              Mengedukasi para peserta didik dan pihak sekolah terkait pentingnya menjaga mental yang sehat di kalangan anak-anak hingga remaja. Kesehatan mental yang baik adalah kondisi ketika batin kita berada dalam keadaan tentram dan tenang, sehingga memungkinkan kita untuk menikmati kehidupan sehari-hari. Orang yang kesehatan mentalnya terganggu akan mengalami gangguan suasana hati, kemampuan berpikir, serta kendali emosi yang bisa mengarah pada perilaku buruk.
               </p>
             </div>
           </div>
@@ -46,10 +43,16 @@ const Section2 = () => {
                 className="border-b border-[#1E1E1E]"
               >
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Stress
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                Keadaan ketika seseorang mengalami tekanan yang sangat berat, baik secara emosi maupun mental. Seseorang yang stres biasanya akan tampak gelisah, cemas, dan mudah tersinggung. Penyebab stres :
+                <br />
+                ● Gangguan tidur <br />
+                ● Kelelahan <br />
+                ● Hipertensi <br />
+                ● Kurangnya kendali emosi <br />
+                ● Gangguan jantung
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -57,10 +60,16 @@ const Section2 = () => {
                 className="border-b border-[#1E1E1E]"
               >
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Gangguan Kecemasan
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                ketika seseorang mengalami rasa cemas berlebihan secara konstan dan sulit dikendalikan, sehingga berdampak buruk terhadap kehidupan sehari-harinya.
+                Penyebab gangguan kecemasan : <br />
+                ● Sulit tidur <br />
+                ● Badan gemetar <br />
+                ● Jantung berdebar <br />
+                ● Lelah <br />
+                ● Pusing  
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
@@ -68,22 +77,29 @@ const Section2 = () => {
                 className="border-b border-[#1E1E1E]"
               >
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Depresi
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Consequuntur eius hic tenetur sapiente, saepe, enim aspernatur
-                  sint at vitae possimus similique ratione explicabo dolorum
-                  soluta necessitatibus incidunt natus exercitationem eaque
-                  facilis deserunt, perferendis harum minima iure! Quo accusamus
-                  esse quas iste eveniet exercitationem laudantium dolorem eaque
-                  id delectus, rem neque vitae eos quia natus asperiores
-                  obcaecati accusantium dolor inventore enim? Maiores
-                  accusantium quam non consectetur! Iusto itaque cum distinctio
-                  inventore. Cumque quia laudantium consectetur harum accusamus?
-                  Quisquam ipsam itaque accusantium quas amet, voluptas
-                  nesciunt, pariatur nihil reiciendis hic neque obcaecati sit
-                  nisi illum, totam ullam eius vero iste exercitationem ut.
+                Merupakan suasana hati yang menyebabkan penderitanya terus-menerus merasa sedih.perasaan sedih pada depresi bisa berlangsung hingga berminggu-minggu atau berbulan-bulan. Penyebab depresi :<br />
+                ● Terus-menerus merasa sedih, bahkan terus-menerus menangis.<br />
+                ● Merasa sangat bersalah dan khawatir berlebihan.<br />
+                ● Tidak dapat menikmati hidup karena kehilangan rasa percaya diri.<br />
+                ● Sulit membuat keputusan dan mudah tersinggung.<br />
+                ● Tidak acuh terhadap orang lain.<br />
+                ● Memiliki pikiran untuk menyakiti diri sendiri atau bunuh diri.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem
+                value="item-4"
+                className="border-b border-[#1E1E1E]"
+              >
+                <AccordionTrigger className="md:text-xl text-base">
+                Gangguan Kecemasan
+                </AccordionTrigger>
+                <AccordionContent className="md:text-lg text-sm">
+                <img src="/public/assets/content/sehatmental.svg" alt="" srcset="" />
+                  <a href="https://data.goodstats.id/statistic/1-dari-3-remaja-indonesia-alami-masalah-kesehatan-mental-GkFkh" class="text-gray-500 italic">https://data.goodstats.id/statistic/1-dari-3-remaja-indonesia-alami-masalah-kesehatan-mental-GkFkh</a><br/><br/> 
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

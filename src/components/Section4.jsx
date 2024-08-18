@@ -79,7 +79,7 @@ const Section4 = () => {
                 <img src="/public/assets/content/isipiring2.svg" alt="" srcset="" />
                 <a href="https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/4-pilar-kantin-sehat-sekolah-1024x1024.png" class="text-gray-500 italic">https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/4-pilar-kantin-sehat-sekolah-1024x1024.png
                 </a><br/><br/>
-                      ● Komitmen dan Manajemen Sekolah : Memonitor konsumsi jajanan yang disediakan di kantin sekolah.
+                    ● Komitmen dan Manajemen Sekolah : Memonitor konsumsi jajanan yang disediakan di kantin sekolah.
                 <br/>● Sumber Daya Manusia : Para penjual memiliki pengetahuan serta keterampilan mengelola kantin dan jajanan sehat di sekolah.
                 <br/>● Sarana dan Prasarana : Menjamin kebersihan peralatan makan di kantin sekolah serta lingkungan kantin.
                 <br/>● Mutu Pangan : Jajanan yang dijual wajib memenuhi standar aman, sehat, serta bergizi.

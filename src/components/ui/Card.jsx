@@ -203,23 +203,14 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
+    description: "Saraf Terjepit",
+    title: "Kasus Kesehatan Fisik",
     src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          Dokter Spesialis Orthopaedi Traumatologi dan Konsultan Tulang Belakang RSUD Dr Moewardi Rieva Ermawan mengatakan, karena gaya hidup sudah ada perubahan di mana laki-laki dan perempuan punya kesempatan yang sama terkena saraf terjepit. Saat ini perempuan pun juga banyak aktivitasnya baik ibu-ibu hingga remaja.
         </p>
       );
     },

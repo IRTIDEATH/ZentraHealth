@@ -24,13 +24,10 @@ const Section3 = () => {
           <div className="flex flex-col md:flex-row pt-12">
             <div className="flex flex-col space-y-5">
               <h1 className="md:text-3xl text-xl text-white font-bold">
-                Sehat Fisik
+                Sehat Lingkungan
               </h1>
               <p className="text-white md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
-                Sebagai upaya pengurangan resiko obesitas serta meningkatkan
-                kualitas kesehatan fisik peserta didik, maka perlu untuk
-                dilaksanakannya aktivitas fisik secara rutin. Apa saja aktivitas
-                fisik yang dapat kita upayakan di lingkungan sekolah?
+              Menggalakkan perilaku hidup yang dapat membantu meningkatkan kualitas lingkungan sekolah yang bersih dan sehat. Pelaksanaan perilaku hidup bersih dan sehat di sekolah merupakan salah satu upaya untuk membantu mewujudkan Gerakan Sekolah Sehat. Beberapa kegiatan yang dapat dilakukan diantaranya seperti dibawah ini.
               </p>
             </div>
           </div>
@@ -43,26 +40,26 @@ const Section3 = () => {
             >
               <AccordionItem value="item-1" className="border-b border-[#ECFFFD]">
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Piket Kelas
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                Dimulai dari hal sederhana seperti melaksanakan piket kelas sesuai dengan jadwal yang telah disepakati. Ini merupakan langkah awal dalam mewujudkan lingkungan belajar yang nyaman dan sehat.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2" className="border-b border-[#ECFFFD]">
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Kerja Bakti
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                Melatih jiwa kepedulian peserta didik terhadap lingkungan sekolah. Dengan membersihkan setiap bagian sekolah mulai dari lapangan, ruang kelas, toilet, dan sarana prasarana lainnya yang ada di sekolah.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3" className="border-b border-[#ECFFFD]">
                 <AccordionTrigger className="md:text-xl text-base">
-                  Is it accessible?
+                Penerapan 3R (Reuse, Reduce, Recycle)
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                Reuse yaitu menggunakan kembali kemasan plastik yang dapat digunakan lebih dari satu kali. Reduce merupakan upaya mengurangi sampah. Recycle adalah kegiatan mendaur ulang sampah yang sulit terurai oleh alam.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
