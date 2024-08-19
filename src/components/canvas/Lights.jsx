@@ -23,14 +23,14 @@ const Lights = () => {
           />
           <Lightformer
             form="rect"
-            intensity={10}
+            intensity={7}
             position={[-10, 2, 1]}
             scale={10}
             rotation-y={Math.PI / 2}
           />
           <Lightformer
             form="rect"
-            intensity={10}
+            intensity={5}
             position={[10, 0, 1]}
             scale={10}
             rotation-y={Math.PI / 2}
@@ -45,7 +45,7 @@ const Lights = () => {
        */}
       <spotLight
         position={[-2, 10, 5]}
-        angle={0.15}
+        angle={0.20}
         penumbra={1} // the penumbra is the soft edge of a shadow cast by a point light
         decay={0} // the amount the light dims as it moves away from the source
         intensity={Math.PI * 0.2} // the light intensity

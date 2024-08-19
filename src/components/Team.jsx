@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -11,9 +11,24 @@ import { DataC } from "@/constants";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Instagram, Github } from "lucide-react";
+import VanillaTilt from "vanilla-tilt";
 
 const Team = () => {
   const plugin = React.useRef(Autoplay({ delay: 3000 }));
+
+  useEffect(() => {
+    // Initialize VanillaTilt for each card
+    const tiltElements = document.querySelectorAll('.tilt');
+    tiltElements.forEach(element => {
+      VanillaTilt.init(element, {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2
+      });
+    });
+  }, []);
+
   return (
     <div className="w-full bg-[#ECFFFD] pt-[60rem] md:pt-[25rem]">
       <div className="flex items-center justify-center">
@@ -32,13 +47,13 @@ const Team = () => {
             {DataC.map((datac) => (
               <CarouselItem
                 key={datac.id}
-                className="pl-1 md:basis-1/2 lg:basis-1/3"
+                className="pl-1 md:basis-1/2 lg:basis-1/3 tilt"
               >
                 <div className="p-1">
-                  <div className="bg-[#ECFFFD] rounded-xl border-2 border-[#858F8E]">
+                  <div className="bg-[#ECFFFD] rounded-xl border-2 border-[#858F8E] transition-transform transform hover:scale-105 hover:shadow-xl">
                     <div className="py-6">
                       <div className="flex flex-col items-center justify-center space-y-4">
-                        <div className="flex flex-col items-center justify-end">
+                        <div className="relative flex flex-col items-center justify-end">
                           <Avatar>
                             <AvatarImage src="https://github.com/shadcn.png" />
                             <AvatarFallback>ZH</AvatarFallback>
@@ -54,8 +69,8 @@ const Team = () => {
                           </p>
                         </div>
                         <div className="flex flex-row items-center space-x-3">
-                          <a href="" className="p-2 rounded-full border-2 border-[#858F8E] hover:border-[#FF908C] hover:bg-[#FF908C] hover:text-[#ECFFFD] text-[#858F8E]"><Instagram/></a>
-                          <a href="" className="p-2 rounded-full border-2 border-[#858F8E] hover:border-[#FF908C] hover:bg-[#FF908C] hover:text-[#ECFFFD] text-[#858F8E]"><Github/></a>
+                          <a href="#" className="p-2 rounded-full border-2 border-[#858F8E] hover:border-[#FF908C] hover:bg-[#FF908C] hover:text-[#ECFFFD] text-[#858F8E]"><Instagram /></a>
+                          <a href="#" className="p-2 rounded-full border-2 border-[#858F8E] hover:border-[#FF908C] hover:bg-[#FF908C] hover:text-[#ECFFFD] text-[#858F8E]"><Github /></a>
                         </div>
                       </div>
                     </div>
