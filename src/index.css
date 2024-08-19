@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -75,7 +75,7 @@
 }
 
 .layer1 {
-  background-image: url('./assets/layer/layerplus.svg');
+  background-image: url("./assets/layer/layerplus.svg");
 }
 
 .spacer {
@@ -84,6 +84,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.shadowbg {
+  box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.49);
+-webkit-box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.49);
+-moz-box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.49);
 }
 
 .shadowplus {

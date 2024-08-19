@@ -12,7 +12,7 @@ const Section5 = () => {
     <div className="w-full bg-[#FD5852] pb-16 md:pb-28">
       <div className="flex items-center justify-center pt-2">
         <div className="absolute flex items-center justify-center md:px-16 px-7">
-          <div className="flex flex-col p-9 rounded-3xl bg-[#ECFFFD] text-center items-center justify-center space-y-3">
+          <div className="shadowbg flex flex-col p-9 rounded-3xl bg-[#ECFFFD] text-center items-center justify-center space-y-3">
             <h1 className="text-[#1E1E1E] font-bold text-2xl">
               Apa itu... <br />{" "}
               <span className="text-[#125872]">Gerakan Sekolah Sehat</span>
