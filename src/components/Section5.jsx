@@ -11,14 +11,14 @@ const Section5 = () => {
   return (
     <div className="w-full bg-[#FD5852] pb-16 md:pb-28">
       <div className="flex items-center justify-center pt-2">
-        <div className="absolute flex items-center justify-center px-4 md:px-12">
+        <div className="absolute flex items-center justify-center md:px-16 px-7">
           <div className="flex flex-col p-9 rounded-3xl bg-[#ECFFFD] text-center items-center justify-center space-y-3">
             <h1 className="text-[#1E1E1E] font-bold text-2xl">
               Apa itu... <br />{" "}
-              <span className="text-[#FD5852]">Gerakan Sekolah Sehat</span>
+              <span className="text-[#125872]">Gerakan Sekolah Sehat</span>
             </h1>
-            <p className="text-[#1E1E1E] text-xs md:text-lg text-wrap ">
-              Gerakan Sekolah Sehat (GSS), adalah upaya bersama yang dilakukan
+            <p className="text-[#1E1E1E] text-xs md:text-lg text-wrap">
+              <span className="font-bold">Gerakan Sekolah Sehat (GSS),</span> adalah upaya bersama yang dilakukan
               secara terus-menerus terkait pentingnya penerapan Sekolah Sehat
               yang berfokus pada Sehat Bergizi, Sehat Fisik dan Sehat Imunisasi
               di satuan pendidikan. Namun, di samping itu kita juga perlu

@@ -24,7 +24,7 @@ const Team = () => {
       <div className="mt-12 w-full flex justify-center bg-[#ECFFFD]">
         <Carousel
           plugins={[plugin.current]}
-          className="w-full max-w-[15rem]"
+          className="w-full max-w-[15rem] md:max-w-[40rem]"
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.play}
         >

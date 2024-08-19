@@ -98,13 +98,13 @@ export function ExpandableCardDemo() {
                   <motion.p
                     layoutId={`button-${active.title}-${id}`}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-[#FD5852] text-[#ECFFFD]"
+                    className="px-4 py-3 text-sm rounded-full font-bold bg-[#125872] text-[#ECFFFD]"
                   >
                     {active.ctaText}
                   </motion.p>
                 </div>
                 <ScrollArea className="text-neutral-600 text-xs md:text-sm lg:text-base h-60 flex flex-col items-start gap-4 dark:text-neutral-400">
-                  <div className="pb-16 md:pb-20 px-4">
+                  <div className="pb-8 px-4">
                     {typeof active.content === "function"
                       ? active.content()
                       : active.content}
@@ -150,7 +150,7 @@ export function ExpandableCardDemo() {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-[#FD5852] hover:bg-[#ECFFFD] hover:text-[#1E1E1E] text-[#ECFFFD] mt-4 md:mt-0"
+              className="px-4 py-2 text-sm rounded-full font-bold bg-[#125872] hover:bg-[#ECFFFD] hover:text-[#1E1E1E] text-[#ECFFFD] mt-4 md:mt-0"
             >
               {card.ctaText}
             </motion.button>

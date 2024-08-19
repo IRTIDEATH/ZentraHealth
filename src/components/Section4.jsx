@@ -7,17 +7,23 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import BuahCanvas from "./canvas/Buah";
+import { useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Section4 = () => {
+  const {scrollYProgress} = useScroll()
+
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, 360])
   return (
     <div className="bg-[#FD5852]" id="bergizi">
       <div className="w-full bg-[#ECFFFD] md:rounded-tl-[5rem] rounded-tl-[4rem] pb-16 md:pb-28">
         <div className="flex items-center justify-start">
           <div className="absolute flex pl-10 md:pl-16">
-            <img
+            <motion.img
               src={pluss}
               alt=""
               className="w-[90px] h-[90px] md:w-[140px] md:h-[140px] object-contain shadowplus"
+              style={{rotate}}
             />
           </div>
         </div>
