@@ -1,5 +1,5 @@
 import React from "react";
-import { ExpandableCardDemo } from "./ui/Card";
+import { ExpandableCardDemo } from "./ui/Cardex";
 
 const Cases = () => {
   return (
