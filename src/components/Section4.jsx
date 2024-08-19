@@ -61,8 +61,6 @@ const Section4 = () => {
                 ● Peningkatan pemahaman Gizi Seimbang (Isi Piringku).<br></br>
                 ● Meminimalisir konsumsi makanan cepat saji, berpengawet, tinggi gula dan kolesterol.<br></br>
                 ● Membina kantin yang sehat.
-
-
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem

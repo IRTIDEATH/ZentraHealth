@@ -7,17 +7,23 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import SuntikanCanvas from "./canvas/Suntikan";
+import { useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Section1 = () => {
+  const {scrollYProgress} = useScroll()
+
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, 360])
   return (
     <div className="bg-[#ECFFFD]" id="imunisasi">
       <div className="w-full bg-[#FD5852] md:rounded-tr-[5rem] rounded-tr-[4rem] pb-16 md:pb-28">
         <div className="flex items-center justify-end">
           <div className="absolute flex pr-10 md:pr-16">
-            <img
+            <motion.img
               src={plus}
               alt=""
               className="w-[90px] h-[90px] md:w-[140px] md:h-[140px] object-contain shadowplus"
+              style={{rotate}}
             />
           </div>
         </div>
