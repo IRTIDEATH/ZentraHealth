@@ -11,13 +11,13 @@ import SuntikanCanvas from "./canvas/Suntikan";
 const Section1 = () => {
   return (
     <div className="bg-[#ECFFFD]" id="imunisasi">
-      <div className="w-full bg-[#FD5852] md:rounded-tr-[6rem] rounded-tr-[5rem] pb-16 md:pb-28">
-        <div className="flex items-center justify-end pt-2">
-          <div className="absolute flex pr-16">
+      <div className="w-full bg-[#FD5852] md:rounded-tr-[5rem] rounded-tr-[4rem] pb-16 md:pb-28">
+        <div className="flex items-center justify-end">
+          <div className="absolute flex pr-10 md:pr-16">
             <img
               src={plus}
               alt=""
-              className="w-[90px] h-[90px] md:w-[170px] md:h-[170px] object-contain shadowplus"
+              className="w-[90px] h-[90px] md:w-[140px] md:h-[140px] object-contain shadowplus"
             />
           </div>
         </div>

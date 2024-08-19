@@ -104,7 +104,7 @@ export function ExpandableCardDemo() {
                   </motion.p>
                 </div>
                 <ScrollArea className="text-neutral-600 text-xs md:text-sm lg:text-base h-60 flex flex-col items-start gap-4 dark:text-neutral-400">
-                  <div className="pb-28 md:pb-20 px-4">
+                  <div className="pb-16 md:pb-20 px-4">
                     {typeof active.content === "function"
                       ? active.content()
                       : active.content}

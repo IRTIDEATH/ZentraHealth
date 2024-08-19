@@ -11,9 +11,9 @@ import BuahCanvas from "./canvas/Buah";
 const Section4 = () => {
   return (
     <div className="bg-[#FD5852]" id="bergizi">
-      <div className="w-full bg-[#ECFFFD] md:rounded-tl-[6rem] rounded-tl-[5rem] pb-16 md:pb-28">
-        <div className="flex items-center justify-start pt-2">
-          <div className="absolute flex pl-16">
+      <div className="w-full bg-[#ECFFFD] md:rounded-tl-[5rem] rounded-tl-[4rem] pb-16 md:pb-28">
+        <div className="flex items-center justify-start">
+          <div className="absolute flex pl-10 md:pl-16">
             <img
               src={pluss}
               alt=""
