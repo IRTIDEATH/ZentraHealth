@@ -205,96 +205,85 @@ const cards = [
   {
     description: "Saraf Terjepit",
     title: "Kasus Kesehatan Fisik",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    src: "/public/assets/content/kasusfisik.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
+          <p className="font-semibold">Dikutip dari mediaindonesia.com, pada 27 Juli 2024.</p> <br />
           Dokter Spesialis Orthopaedi Traumatologi dan Konsultan Tulang Belakang RSUD Dr Moewardi Rieva Ermawan mengatakan, karena gaya hidup sudah ada perubahan di mana laki-laki dan perempuan punya kesempatan yang sama terkena saraf terjepit. Saat ini perempuan pun juga banyak aktivitasnya baik ibu-ibu hingga remaja.
+          <br /><br />
+          "Kalau perempuan biasanya habis melakukan suatu pekerjaan rumah tangga yang tidak biasa dilakukan misalnya angkat galon atau mengangkat beban sendiri di rumah sebabkan bantalan sendiri kalah karena mendadak," kata dr Rieva dikutip pada Sabtu (27/7). <br />
+          (selengkapnya: <a href="//mediaindonesia.com/jelita/688226/kurang-aktivitas-fisik-ibu-rumah-tangga-bisa-terkena-saraf-terjepit" class="text-blue-500"> Kasus Kesehtan Fisik</a>)
         </p>
       );
     },
   },
   {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    description: "Diabetes",
+    title: "Kasus Kesehatan Gizi",
+    src: "/public/assets/content/kasusgizi.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          <p className="font-semibold">Dikutip dari blitarkawentar.jawapos.com, pada 15 Agustus 2024.</p> <br />
+          Kepala Bidang Kesehatan Masyarakat (Kesmas) Dinas Kesehatan (Dinkes) Kota Blitar, Endang Purwono, membenarkan kasus ratusan anak balita terindikasi obesitas dikarenakan pemilihan susu formula (sufor) yang memiliki kandungan gula tinggi atau melebihi standar yang ditentukan.
+          <br /><br />
+          “Kalau tidak pandai memilih sufor dengan kandungan gula yang rendah bisa menjadikan obesitas,” jelasnya kepada Jawa Pos Radar Blitar, Rabu (14/8/2024).<br />
+          (selengkapnya: <a href="https://blitarkawentar.jawapos.com/kawentaran/2274978303/ratusan-balita-di-kota-blitar-terindikasi-obesitas-gegara-minum-sufor-tinggi-gula-dinkes-berikan-imbauan-ini" class="text-blue-500"> Kasus Kesehatan Gizi</a>)
         </p>
       );
     },
   },
 
   {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    description: "Polio",
+    title: "Kasus Imunisasi",
+    src: "/public/assets/content/kasusimun.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
+         <p className="font-semibold">Dikutip dari nasional.kompas.com, pada 05 Januari 2024.</p> <br />
+         Terbaru, anak berusia 6 tahun di Klaten, Jawa Tengah positif polio setelah pulau dari Sampang, Madura, Jawa Timur. Menteri Kesehatan Budi Gunadi Sadikin akan menggencarkan vaksinasi polio di daerah-daerah kasus dan daerah dengan risiko penularan tinggi lumpuh layuh tahun ini.
+          <br /><br />
+          "Sudah kita lakukan sama yang di Aceh, sama yang di Sumatera, kita akan kejar. Jadi kita akan tambah vaksinasi polio di daerah-daerah itu," kata Budi di Kompleks Istana Kepresidenan, Jakarta Pusat, Jumat (5/1/2024).<br />
+          (selengkapnya: <a href="https://nasional.kompas.com/read/2024/01/05/13150551/kemenkes-bakal-gencarkan-imunisasi-polio-setelah-temukan-kasus-di-jawa"> Kasus Kesehatan Imunisasi</a>)
         </p>
       );
     },
   },
   {
-    description: "Led Zeppelin",
-    title: "Stairway To Heaven",
-    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    description: "Skizofrenia",
+    title: "Kasus Kesehatan Mental",
+    src: "/public/assets/content/kasusmental.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-          Led Zeppelin, a legendary British rock band, is renowned for their
-          innovative sound and profound impact on the music industry. Formed in
-          London in 1968, they have become a cultural icon in the rock music
-          world. <br /> <br /> Their songs often reflect a blend of blues, hard
-          rock, and folk music, capturing the essence of the 1970s rock era.
-          With a career spanning over a decade, Led Zeppelin has released
-          numerous hit albums and singles that have garnered them a massive fan
-          following both in the United Kingdom and abroad.
+          <p className="font-semibold">Dikutip dari bbc.com, pada 11 Maret 2024.</p> <br />
+          Kasus pembunuhan seorang anak di Bekasi oleh ibu kandungnya, yang terindikasi mengidap skizofrenia, dinilai mencerminkan kegagalan deteksi dini kasus-kasus gangguan jiwa.
+          <br /><br />
+          “Ini kan kasus yang sebenarnya terlambat ditangani, terlambat diobati. Tapi akhirnya orang jadi takut misalnya, ‘Kalau saya menikah dengan orang skizofrenia jadi seperti ini’. Ketika mereka mau bekerja, menjalani pendidikan, jadi dianggap seperti itu. Kesannya jadi sangat keji, padahal itu di luar kendali diri dia,” kata Bagus kepada BBC News Indonesia pada Minggu (10/03).<br />
+          (selengkapnya: <a href="https://www.bbc.com/indonesia/articles/c51w0zn1xeyo"> Kasus Kesehatan Mental</a>)
         </p>
       );
     },
   },
   {
-    description: "Mustafa Zahid",
-    title: "Toh Phir Aao",
-    src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
+    description: "Lautan Sampah",
+    title: "Kasus Kesehatan Lingkungan",
+    src: "/public/assets/content/kasuslingkungan.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-          &quot;Aawarapan&quot;, a Bollywood movie starring Emraan Hashmi, is
-          renowned for its intense storyline and powerful performances. Directed
-          by Mohit Suri, the film has become a significant work in the Indian
-          film industry. <br /> <br /> The movie explores themes of love,
-          redemption, and sacrifice, capturing the essence of human emotions and
-          relationships. With a gripping narrative and memorable music,
-          &quot;Aawarapan&quot; has garnered a massive fan following both in
-          India and abroad, solidifying Emraan Hashmi&apos;s status as a
-          versatile actor.
+          <p className="font-semibold">Dikutip dari liputan6.com, pada 20 Juni 2024.</p> <br />
+          Pandawara Group baru-baru ini mengajak masyarakat Bandung Raya untuk bersama-sama membersihkan sampah yang berada di sungai Jembatan Babakan Sapan (BBS) di kawasan Sungai Citarum yang menghubungkan Batujajar dan Cililin, Kabupaten Bandung Barat.
+          <br /><br />
+          "Bukan Bandung lautan api, tapi Bandung lautan sampah, jika kondisi ini terjadi selama berpuluh-puluh tahun ke depan," ucap Pandawara Group. Oleh karena itu mereka mengajak masyarakat dari semua elemen untuk membersihkan sampah-sampah yang ada di kawasan Sungai Citarum.<br />
+          (selengkapnya: <a href="https://www.liputan6.com/lifestyle/read/5623747/baru-3-hari-dibersihkan-pandawara-sungai-citarum-kembali-dipenuhi-sampah?page=4"> Kasus Kesehatan Imunisasi</a>)
         </p>
       );
     },
