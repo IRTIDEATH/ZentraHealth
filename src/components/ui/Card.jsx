@@ -1,11 +1,10 @@
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { ScrollArea } from "./scroll-area";
 
 export function ExpandableCardDemo() {
-  const [active, setActive] = useState(
-    null
-  );
+  const [active, setActive] = useState(null);
   const ref = useRef(null);
   const id = useId();
 
@@ -104,19 +103,13 @@ export function ExpandableCardDemo() {
                     {active.ctaText}
                   </motion.p>
                 </div>
-                <div className="pt-4 relative px-4">
-                  <motion.div
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,[#ECFFFD],[#ECFFFD],transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
-                  >
+                <ScrollArea className="text-neutral-600 text-xs md:text-sm lg:text-base h-60 flex flex-col items-start gap-4 dark:text-neutral-400">
+                  <div className="pb-28 md:pb-20 px-4">
                     {typeof active.content === "function"
                       ? active.content()
                       : active.content}
-                  </motion.div>
-                </div>
+                  </div>
+                </ScrollArea>
               </div>
             </motion.div>
           </div>
@@ -205,16 +198,35 @@ const cards = [
   {
     description: "Saraf Terjepit",
     title: "Kasus Kesehatan Fisik",
-    src: "/public/assets/content/kasusfisik.svg",
+    src: "/assets/content/kasusfisik.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-          <p className="font-semibold">Dikutip dari mediaindonesia.com, pada 27 Juli 2024.</p> <br />
-          Dokter Spesialis Orthopaedi Traumatologi dan Konsultan Tulang Belakang RSUD Dr Moewardi Rieva Ermawan mengatakan, karena gaya hidup sudah ada perubahan di mana laki-laki dan perempuan punya kesempatan yang sama terkena saraf terjepit. Saat ini perempuan pun juga banyak aktivitasnya baik ibu-ibu hingga remaja.
-          <br /><br />
-          "Kalau perempuan biasanya habis melakukan suatu pekerjaan rumah tangga yang tidak biasa dilakukan misalnya angkat galon atau mengangkat beban sendiri di rumah sebabkan bantalan sendiri kalah karena mendadak," kata dr Rieva dikutip pada Sabtu (27/7). <br />
-          (selengkapnya: <a href="//mediaindonesia.com/jelita/688226/kurang-aktivitas-fisik-ibu-rumah-tangga-bisa-terkena-saraf-terjepit" class="text-blue-500"> Kasus Kesehtan Fisik</a>)
+          <p className="font-semibold">
+            Dikutip dari mediaindonesia.com, pada 27 Juli 2024.
+          </p>{" "}
+          <br />
+          Dokter Spesialis Orthopaedi Traumatologi dan Konsultan Tulang Belakang
+          RSUD Dr Moewardi Rieva Ermawan mengatakan, karena gaya hidup sudah ada
+          perubahan di mana laki-laki dan perempuan punya kesempatan yang sama
+          terkena saraf terjepit. Saat ini perempuan pun juga banyak
+          aktivitasnya baik ibu-ibu hingga remaja.
+          <br />
+          <br />
+          "Kalau perempuan biasanya habis melakukan suatu pekerjaan rumah tangga
+          yang tidak biasa dilakukan misalnya angkat galon atau mengangkat beban
+          sendiri di rumah sebabkan bantalan sendiri kalah karena mendadak,"
+          kata dr Rieva dikutip pada Sabtu (27/7). <br />
+          (selengkapnya:{" "}
+          <a
+            href="//mediaindonesia.com/jelita/688226/kurang-aktivitas-fisik-ibu-rumah-tangga-bisa-terkena-saraf-terjepit"
+            class="text-blue-500"
+          >
+            {" "}
+            Kasus Kesehtan Fisik
+          </a>
+          )
         </p>
       );
     },
@@ -222,16 +234,34 @@ const cards = [
   {
     description: "Diabetes",
     title: "Kasus Kesehatan Gizi",
-    src: "/public/assets/content/kasusgizi.svg",
+    src: "/assets/content/kasusgizi.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-          <p className="font-semibold">Dikutip dari blitarkawentar.jawapos.com, pada 15 Agustus 2024.</p> <br />
-          Kepala Bidang Kesehatan Masyarakat (Kesmas) Dinas Kesehatan (Dinkes) Kota Blitar, Endang Purwono, membenarkan kasus ratusan anak balita terindikasi obesitas dikarenakan pemilihan susu formula (sufor) yang memiliki kandungan gula tinggi atau melebihi standar yang ditentukan.
-          <br /><br />
-          “Kalau tidak pandai memilih sufor dengan kandungan gula yang rendah bisa menjadikan obesitas,” jelasnya kepada Jawa Pos Radar Blitar, Rabu (14/8/2024).<br />
-          (selengkapnya: <a href="https://blitarkawentar.jawapos.com/kawentaran/2274978303/ratusan-balita-di-kota-blitar-terindikasi-obesitas-gegara-minum-sufor-tinggi-gula-dinkes-berikan-imbauan-ini" class="text-blue-500"> Kasus Kesehatan Gizi</a>)
+          <p className="font-semibold">
+            Dikutip dari blitarkawentar.jawapos.com, pada 15 Agustus 2024.
+          </p>{" "}
+          <br />
+          Kepala Bidang Kesehatan Masyarakat (Kesmas) Dinas Kesehatan (Dinkes)
+          Kota Blitar, Endang Purwono, membenarkan kasus ratusan anak balita
+          terindikasi obesitas dikarenakan pemilihan susu formula (sufor) yang
+          memiliki kandungan gula tinggi atau melebihi standar yang ditentukan.
+          <br />
+          <br />
+          “Kalau tidak pandai memilih sufor dengan kandungan gula yang rendah
+          bisa menjadikan obesitas,” jelasnya kepada Jawa Pos Radar Blitar, Rabu
+          (14/8/2024).
+          <br />
+          (selengkapnya:{" "}
+          <a
+            href="https://blitarkawentar.jawapos.com/kawentaran/2274978303/ratusan-balita-di-kota-blitar-terindikasi-obesitas-gegara-minum-sufor-tinggi-gula-dinkes-berikan-imbauan-ini"
+            className="text-blue-500"
+          >
+            {" "}
+            Kasus Kesehatan Gizi
+          </a>
+          )
         </p>
       );
     },
@@ -240,16 +270,34 @@ const cards = [
   {
     description: "Polio",
     title: "Kasus Imunisasi",
-    src: "/public/assets/content/kasusimun.svg",
+    src: "/assets/content/kasusimun.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-         <p className="font-semibold">Dikutip dari nasional.kompas.com, pada 05 Januari 2024.</p> <br />
-         Terbaru, anak berusia 6 tahun di Klaten, Jawa Tengah positif polio setelah pulau dari Sampang, Madura, Jawa Timur. Menteri Kesehatan Budi Gunadi Sadikin akan menggencarkan vaksinasi polio di daerah-daerah kasus dan daerah dengan risiko penularan tinggi lumpuh layuh tahun ini.
-          <br /><br />
-          "Sudah kita lakukan sama yang di Aceh, sama yang di Sumatera, kita akan kejar. Jadi kita akan tambah vaksinasi polio di daerah-daerah itu," kata Budi di Kompleks Istana Kepresidenan, Jakarta Pusat, Jumat (5/1/2024).<br />
-          (selengkapnya: <a href="https://nasional.kompas.com/read/2024/01/05/13150551/kemenkes-bakal-gencarkan-imunisasi-polio-setelah-temukan-kasus-di-jawa"> Kasus Kesehatan Imunisasi</a>)
+          <p className="font-semibold">
+            Dikutip dari nasional.kompas.com, pada 05 Januari 2024.
+          </p>{" "}
+          <br />
+          Terbaru, anak berusia 6 tahun di Klaten, Jawa Tengah positif polio
+          setelah pulau dari Sampang, Madura, Jawa Timur. Menteri Kesehatan Budi
+          Gunadi Sadikin akan menggencarkan vaksinasi polio di daerah-daerah
+          kasus dan daerah dengan risiko penularan tinggi lumpuh layuh tahun
+          ini.
+          <br />
+          <br />
+          "Sudah kita lakukan sama yang di Aceh, sama yang di Sumatera, kita
+          akan kejar. Jadi kita akan tambah vaksinasi polio di daerah-daerah
+          itu," kata Budi di Kompleks Istana Kepresidenan, Jakarta Pusat, Jumat
+          (5/1/2024).
+          <br />
+          (selengkapnya:{" "}
+          <a href="https://nasional.kompas.com/read/2024/01/05/13150551/kemenkes-bakal-gencarkan-imunisasi-polio-setelah-temukan-kasus-di-jawa"
+          className="text-blue-500">
+            {" "}
+            Kasus Kesehatan Imunisasi
+          </a>
+          )
         </p>
       );
     },
@@ -257,33 +305,68 @@ const cards = [
   {
     description: "Skizofrenia",
     title: "Kasus Kesehatan Mental",
-    src: "/public/assets/content/kasusmental.svg",
+    src: "/assets/content/kasusmental.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-          <p className="font-semibold">Dikutip dari bbc.com, pada 11 Maret 2024.</p> <br />
-          Kasus pembunuhan seorang anak di Bekasi oleh ibu kandungnya, yang terindikasi mengidap skizofrenia, dinilai mencerminkan kegagalan deteksi dini kasus-kasus gangguan jiwa.
-          <br /><br />
-          “Ini kan kasus yang sebenarnya terlambat ditangani, terlambat diobati. Tapi akhirnya orang jadi takut misalnya, ‘Kalau saya menikah dengan orang skizofrenia jadi seperti ini’. Ketika mereka mau bekerja, menjalani pendidikan, jadi dianggap seperti itu. Kesannya jadi sangat keji, padahal itu di luar kendali diri dia,” kata Bagus kepada BBC News Indonesia pada Minggu (10/03).<br />
-          (selengkapnya: <a href="https://www.bbc.com/indonesia/articles/c51w0zn1xeyo"> Kasus Kesehatan Mental</a>)
+          <p className="font-semibold">
+            Dikutip dari bbc.com, pada 11 Maret 2024.
+          </p>{" "}
+          <br />
+          Kasus pembunuhan seorang anak di Bekasi oleh ibu kandungnya, yang
+          terindikasi mengidap skizofrenia, dinilai mencerminkan kegagalan
+          deteksi dini kasus-kasus gangguan jiwa.
+          <br />
+          <br />
+          “Ini kan kasus yang sebenarnya terlambat ditangani, terlambat diobati.
+          Tapi akhirnya orang jadi takut misalnya, ‘Kalau saya menikah dengan
+          orang skizofrenia jadi seperti ini’. Ketika mereka mau bekerja,
+          menjalani pendidikan, jadi dianggap seperti itu. Kesannya jadi sangat
+          keji, padahal itu di luar kendali diri dia,” kata Bagus kepada BBC
+          News Indonesia pada Minggu (10/03).
+          <br />
+          (selengkapnya:{" "}
+          <a href="https://www.bbc.com/indonesia/articles/c51w0zn1xeyo"
+          className="text-blue-500">
+            {" "}
+            Kasus Kesehatan Mental
+          </a>
+          )
         </p>
       );
     },
   },
   {
     description: "Lautan Sampah",
-    title: "Kasus Kesehatan Lingkungan",
-    src: "/public/assets/content/kasuslingkungan.svg",
+    title: "Kasus Keseh",
+    src: "/assets/content/kasuslingkungan.svg",
     ctaText: "Lihat",
     content: () => {
       return (
         <p>
-          <p className="font-semibold">Dikutip dari liputan6.com, pada 20 Juni 2024.</p> <br />
-          Pandawara Group baru-baru ini mengajak masyarakat Bandung Raya untuk bersama-sama membersihkan sampah yang berada di sungai Jembatan Babakan Sapan (BBS) di kawasan Sungai Citarum yang menghubungkan Batujajar dan Cililin, Kabupaten Bandung Barat.
-          <br /><br />
-          "Bukan Bandung lautan api, tapi Bandung lautan sampah, jika kondisi ini terjadi selama berpuluh-puluh tahun ke depan," ucap Pandawara Group. Oleh karena itu mereka mengajak masyarakat dari semua elemen untuk membersihkan sampah-sampah yang ada di kawasan Sungai Citarum.<br />
-          (selengkapnya: <a href="https://www.liputan6.com/lifestyle/read/5623747/baru-3-hari-dibersihkan-pandawara-sungai-citarum-kembali-dipenuhi-sampah?page=4"> Kasus Kesehatan Imunisasi</a>)
+          <p className="font-semibold">
+            Dikutip dari liputan6.com, pada 20 Juni 2024.
+          </p>{" "}
+          <br />
+          Pandawara Group baru-baru ini mengajak masyarakat Bandung Raya untuk
+          bersama-sama membersihkan sampah yang berada di sungai Jembatan
+          Babakan Sapan (BBS) di kawasan Sungai Citarum yang menghubungkan
+          Batujajar dan Cililin, Kabupaten Bandung Barat.
+          <br />
+          <br />
+          "Bukan Bandung lautan api, tapi Bandung lautan sampah, jika kondisi
+          ini terjadi selama berpuluh-puluh tahun ke depan," ucap Pandawara
+          Group. Oleh karena itu mereka mengajak masyarakat dari semua elemen
+          untuk membersihkan sampah-sampah yang ada di kawasan Sungai Citarum.
+          <br />
+          (selengkapnya:{" "}
+          <a href="https://www.liputan6.com/lifestyle/read/5623747/baru-3-hari-dibersihkan-pandawara-sungai-citarum-kembali-dipenuhi-sampah?page=4"
+          className="text-blue-500">
+            {" "}
+            Kasus Kesehatan Imunisasi
+          </a>
+          )
         </p>
       );
     },
