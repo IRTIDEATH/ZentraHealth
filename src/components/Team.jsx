@@ -31,15 +31,16 @@ const Team = () => {
 
   return (
     <div className="w-full bg-[#ECFFFD] pt-[60rem] md:pt-[25rem]">
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
         <h1 className="text-3xl font-bold">
-          Team <span className="text-[#125872]">Kami</span>
+          Tim <span className="text-[#125872]">Kami</span>
         </h1>
+        <p className="text-[#737373] text-lg text-center mt-1">Kami, tim ZentraHealth terdiri dari para anggota yang terlatih di <br/> dalam setiap bidangnya.</p>
       </div>
       <div className="mt-12 w-full flex justify-center bg-[#ECFFFD]">
         <Carousel
           plugins={[plugin.current]}
-          className="w-full max-w-[15rem] md:max-w-[40rem]"
+          className="w-full max-w-[15rem] md:max-w-[45rem]"
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.play}
         >
@@ -49,7 +50,7 @@ const Team = () => {
                 key={datac.id}
                 className="pl-1 md:basis-1/2 lg:basis-1/3 tilt"
               >
-                <div className="p-1">
+                <div className="p-3">
                   <div className="bg-[#ECFFFD] rounded-xl border-2 border-[#858F8E] transition-transform transform hover:scale-105 hover:shadow-xl">
                     <div className="py-6">
                       <div className="flex flex-col items-center justify-center space-y-4">
