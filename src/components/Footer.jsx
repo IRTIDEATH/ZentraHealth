@@ -23,19 +23,23 @@ const Footer = () => {
                     <h1 className="text-sm">SMK Negeri 46 Jakarta</h1>
                     <div className="flex space-x-3">
                         <MapPin />
+                        <a href="https://www.google.com/maps/place/SMK+Negeri+46+Jakarta/@-6.2170907,106.8838618,15z/data=!4m6!3m5!1s0x2e69f36a76939ce9:0x1dd69348f251fa2a!8m2!3d-6.2170907!4d106.8838618!16s%2Fg%2F1220__b6?entry=ttu">
                         <p className="text-xs">
                             B7, Jl. Cipinang Pulo No.19, RT.7/RW.14, North Cipinang Besar, Jatinegara, East Jakarta City, Jakarta 13410
                         </p>
+                        </a>
                     </div>
                     <div className="flex space-x-3">
                         <Phone size={14}/>
+                        <a href="https://www.google.com/maps/place/SMK+Negeri+46+Jakarta/@-6.2170907,106.8838618,15z/data=!4m6!3m5!1s0x2e69f36a76939ce9:0x1dd69348f251fa2a!8m2!3d-6.2170907!4d106.8838618!16s%2Fg%2F1220__b6?entry=ttu">
                         <p className="text-xs">
                             {"(021)"} 8195127
                         </p>
+                        </a>
                     </div>
                 </div>
                 </div>
-                <div className="grid grid-cols-2 text-sm gap-x-12 md:gap-x-60 gap-y-8 sm:grid-cols-2">
+                <div className="grid grid-cols-2 text-sm gap-x-12 md:gap-x-80 gap-y-8 sm:grid-cols-2">
                 <div className="space-y-3">
                     <h3 className=" uppercase font-bold">
                     Tautan Halaman
@@ -43,22 +47,47 @@ const Footer = () => {
                     <ul className="space-y-1">
                     <li>
                         <a href="#">
-                        Features
+                        Beranda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tentang">
+                        Tentang
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#fisik">
+                        Sehat Fisik
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#bergizi">
+                        Sehat Bergizi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#imunisasi">
+                        Sehat Imunisasi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#mental">
+                        Sehat Mental
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#lingkungan">
+                        Sehat Lingkungan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#kasus">
+                        Masalah Kesehatan
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                        Integrations
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        Pricing
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        FAQ
+                        Konsultasi
                         </a>
                     </li>
                     </ul>
@@ -67,18 +96,48 @@ const Footer = () => {
                     <h3 className="uppercase font-bold">Sumber & Kredit</h3>
                     <ul className="space-y-1">
                     <li>
-                        <a href="#">
-                        Public API
+                        <a href="https://uks.kemdikbud.go.id/sekolah-sehat">
+                        uks.kemdikbud
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                        Documentation
+                        <a href="https://ayosehat.kemkes.go.id/1000-hari-pertama-kehidupan/seputar-imunisasi">
+                        ayosehat.kemkes
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                        Guides
+                        <a href="https://data.goodstats.id/statistic/1-dari-3-remaja-indonesia-alami-masalah-kesehatan-mental-GkFkh">
+                        data.goodstats
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://mediaindonesia.com/jelita/688226/kurang-aktivitas-fisik-ibu-rumah-tangga-bisa-terkena-saraf-terjepit">
+                        mediaindonesia.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blitarkawentar.jawapos.com/kawentaran/2274978303/ratusan-balita-di-kota-blitar-terindikasi-obesitas-gegara-minum-sufor-tinggi-gula-dinkes-berikan-imbauan-ini">
+                        blitarkawentar.jawapos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://nasional.kompas.com/read/2024/01/05/13150551/kemenkes-bakal-gencarkan-imunisasi-polio-setelah-temukan-kasus-di-jawa">
+                        nasional.kompas.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.bbc.com/indonesia/articles/c51w0zn1xeyo">
+                        bbc.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.liputan6.com/lifestyle/read/5623747/baru-3-hari-dibersihkan-pandawara-sungai-citarum-kembali-dipenuhi-sampah?page=4">
+                        liputan6.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ryann_caesar?igsh=MThnOGc3bHl4Ymo0">
+                        Kredit aset 3D : ryann_caesar
                         </a>
                     </li>
                     </ul>

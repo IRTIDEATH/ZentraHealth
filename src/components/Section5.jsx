@@ -9,7 +9,7 @@ import DumbellCanvas from "./canvas/Dumbell";
 
 const Section5 = () => {
   return (
-    <div className="w-full bg-[#FD5852] pb-16 md:pb-28">
+    <div className="w-full bg-[#FD5852] pb-16 md:pb-28" id="fisik">
       <div className="flex items-center justify-center pt-2">
         <div className="absolute flex items-center justify-center md:px-16 px-7">
           <div className="shadowbg flex flex-col p-9 rounded-3xl bg-[#ECFFFD] text-center items-center justify-center space-y-3">

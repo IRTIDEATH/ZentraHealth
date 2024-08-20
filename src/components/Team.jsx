@@ -30,7 +30,7 @@ const Team = () => {
   }, []);
 
   return (
-    <div className="w-full bg-[#ECFFFD] pt-[60rem] md:pt-[25rem]">
+    <div className="w-full bg-[#ECFFFD] pt-[60rem] md:pt-[25rem]" id="team">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-3xl font-bold">
           Tim <span className="text-[#125872]">Kami</span>
