@@ -10,10 +10,9 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import logoImage from "/assets/icon/logo.png";
 
 export const FloatingNav = ({ navItems }) => {
   const { scrollYProgress } = useScroll();
@@ -51,15 +50,16 @@ export const FloatingNav = ({ navItems }) => {
           duration: 0.2,
         }}
         className={cn(
-          "flex fixed top-4 inset-x-0 mx-auto rounded-full border border-[#B8B8B8] dark:border-white/[0.2] dark:bg-black bg-[#ECFFFD] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[40] w-[60%] px-6 py-4 items-center justify-between"
+          "flex fixed top-4 inset-x-0 mx-auto rounded-full border border-[#B8B8B8] dark:border-white/[0.2] dark:bg-black bg-[#ECFFFD] shadow-md z-[40] max-w-3xl px-4 sm:px-6 py-2 sm:py-4 items-center justify-between"
         )}
       >
-        <div>logo</div>
+        <div className="flex-shrink-0">
+          <img src={logoImage} alt="Logo" className="h-8 sm:h-10" />
+        </div>
         <div className="flex flex-row space-x-4">
           {navItems.map((navItem, idx) => (
             <a
               key={`link=${idx}`}
-              // href={navItem.link}
               className={cn(
                 "relative dark:text-neutral-50 items-center flex text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
               )}
@@ -70,10 +70,25 @@ export const FloatingNav = ({ navItems }) => {
             </a>
           ))}
           <DropdownMenu modal={false}>
-            <DropdownMenuTrigger className="text-sm font-normal">
+            <DropdownMenuTrigger className="text-sm font-normal flex items-center">
               Konten
+              <svg
+                className="w-4 h-4 ml-1 transition-transform transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
             </DropdownMenuTrigger>
-            <DropdownMenuContent>
+            <DropdownMenuContent className="mt-2">
               <DropdownMenuItem><a href="#fisik">Fisik</a></DropdownMenuItem>
               <DropdownMenuItem><a href="#bergizi">Bergizi</a></DropdownMenuItem>
               <DropdownMenuItem><a href="#imunisasi">Imunisasi</a></DropdownMenuItem>
@@ -81,7 +96,7 @@ export const FloatingNav = ({ navItems }) => {
               <DropdownMenuItem><a href="#lingkungan">Lingkungan</a></DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <button className="border text-sm font-medium relative border-[#B8B8B8] dark:border-white/[0.2] text-black dark:text-white px-6 py-2 rounded-full">
+          <button className="border text-sm font-medium relative border-[#B8B8B8] dark:border-white/[0.2] text-black dark:text-white px-4 sm:px-6 py-2 rounded-full">
             <span>Konsultasi</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-[#FD5852] to-transparent h-px" />
           </button>
