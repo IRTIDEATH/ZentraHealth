@@ -70,8 +70,8 @@ const Team = () => {
                           </p>
                         </div>
                         <div className="flex flex-row items-center space-x-3">
-                          <a href="#" className="p-2 rounded-full border-2 border-[#858F8E] hover:border-[#FF908C] hover:bg-[#FF908C] hover:text-[#ECFFFD] text-[#858F8E]"><Instagram /></a>
-                          <a href="#" className="p-2 rounded-full border-2 border-[#858F8E] hover:border-[#FF908C] hover:bg-[#FF908C] hover:text-[#ECFFFD] text-[#858F8E]"><Github /></a>
+                          <a href={datac.instagram} className="p-2 rounded-full border-2 border-[#858F8E] hover:border-[#FF908C] hover:bg-[#FF908C] hover:text-[#ECFFFD] text-[#858F8E]"><Instagram /></a>
+                          <a href={datac.github} className="p-2 rounded-full border-2 border-[#858F8E] hover:border-[#FF908C] hover:bg-[#FF908C] hover:text-[#ECFFFD] text-[#858F8E]"><Github /></a>
                         </div>
                       </div>
                     </div>
