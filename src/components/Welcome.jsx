@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 const Welcome = () => {
   return (
     <div className="w-full">
-      <div className="flex flex-col md:px-16 px-7 pt-32 pb-60 md:pb-52 leading-none">
+      <div className="flex flex-col md:px-16 px-7 pt-20 pb-60 md:pb-52 leading-none" id="tentang">
         <h1 className="text-2xl md:text-4xl font-bold">
           Bersama <span className="text-[#FD5852]">ZentraHealth</span> <br />
           Wujudkan{" "}

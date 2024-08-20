@@ -3,7 +3,7 @@ import { ExpandableCardDemo } from "./ui/Cardex";
 
 const Cases = () => {
   return (
-    <div className="w-full bg-[#FD5852] pt-[55rem] md:pt-[20rem]">
+    <div className="w-full bg-[#FD5852] pt-[55rem] md:pt-[20rem]" id="kasus">
       <div className="flex items-center justify-center">
         <div className="absolute w-full md:px-16 px-7">
           <div className="bg-[#ECFFFD] shadowbg flex flex-col items-center rounded-3xl">
