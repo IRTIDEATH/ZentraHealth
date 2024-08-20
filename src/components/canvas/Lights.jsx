@@ -16,21 +16,21 @@ const Lights = () => {
            */}
           <Lightformer
             form="rect"
-            intensity={10}
+            intensity={4}
             position={[-1, 0, -10]}
             scale={10}
             color={"#495057"}
           />
           <Lightformer
             form="rect"
-            intensity={7}
+            intensity={3}
             position={[-10, 2, 1]}
             scale={10}
             rotation-y={Math.PI / 2}
           />
           <Lightformer
             form="rect"
-            intensity={5}
+            intensity={3}
             position={[10, 0, 1]}
             scale={10}
             rotation-y={Math.PI / 2}
@@ -44,15 +44,15 @@ const Lights = () => {
        * https://threejs.org/docs/#api/en/lights/SpotLight
        */}
       <spotLight
-        position={[-2, 10, 5]}
+        position={[-2, 90, 5]}
         angle={0.20}
-        penumbra={1} // the penumbra is the soft edge of a shadow cast by a point light
+        penumbra={5} // the penumbra is the soft edge of a shadow cast by a point light
         decay={0} // the amount the light dims as it moves away from the source
         intensity={Math.PI * 0.2} // the light intensity
         color={"#f8f9fa"}
       />
       <spotLight
-        position={[0, -25, 10]}
+        position={[0, -55, 10]}
         angle={0.15}
         penumbra={1}
         decay={0}
