@@ -87,9 +87,9 @@
 }
 
 .shadowbg {
-  box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.49);
--webkit-box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.49);
--moz-box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.49);
+  box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.44);
+  -webkit-box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.44);
+  -moz-box-shadow: 0px 0px 27px 2px rgba(0,0,0,0.44);
 }
 
 .shadowplus {

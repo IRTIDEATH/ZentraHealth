@@ -2,6 +2,7 @@ import About from "./components/About";
 import Cases from "./components/Cases";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import Konsultasi from "./components/Konsultasi";
 import Section1 from "./components/Section1";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
@@ -22,6 +23,7 @@ function App() {
       <Section2 />
       <Section3 />
       <Cases/>
+      <Konsultasi/>
       <Team/>
       <Footer/>
     </div>

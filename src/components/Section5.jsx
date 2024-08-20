@@ -28,7 +28,7 @@ const Section5 = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:px-16 px-7 pb-5 pt-48 md:pt-32 space-y-7 md:space-y-16">
+      <div className="flex flex-col md:px-16 px-7 pb-5 pt-56 md:pt-32 space-y-7 md:space-y-16">
         <div id="fisik" className="flex flex-col md:flex-row pt-12 items-center justify-between">
           <div className="flex flex-col space-y-5">
             <h1 className="md:text-3xl text-xl text-[#ECFFFD] font-bold">

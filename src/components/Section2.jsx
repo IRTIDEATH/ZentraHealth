@@ -66,23 +66,6 @@ const Section2 = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem
-                value="item-2"
-                className="border-b border-[#1E1E1E]"
-              >
-                <AccordionTrigger className="md:text-xl text-base">
-                Gangguan Kecemasan
-                </AccordionTrigger>
-                <AccordionContent className="md:text-lg text-sm">
-                ketika seseorang mengalami rasa cemas berlebihan secara konstan dan sulit dikendalikan, sehingga berdampak buruk terhadap kehidupan sehari-harinya.
-                Penyebab gangguan kecemasan : <br />
-                ● Sulit tidur <br />
-                ● Badan gemetar <br />
-                ● Jantung berdebar <br />
-                ● Lelah <br />
-                ● Pusing  
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem
                 value="item-3"
                 className="border-b border-[#1E1E1E]"
               >
