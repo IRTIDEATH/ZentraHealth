@@ -23,12 +23,9 @@ const badgeVariants = cva(
   }
 )
 
-function Badge({
-  className,
-  variant,
-  ...props
-}) {
-  return (<div className={cn(badgeVariants({ variant }), className)} {...props} />);
-}
+const Badge = React.memo(({ className, variant, ...props }) => {
+  const computedClass = badgeVariants({ variant });
+  return (<div className={`${computedClass} ${className}`} {...props} />);
+});
 
 export { Badge, badgeVariants }
