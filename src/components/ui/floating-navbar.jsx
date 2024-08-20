@@ -12,7 +12,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import logoImage from "/assets/icon/logo.png";
+import logoImage from "/assets/icon/logo.svg";
 
 export const FloatingNav = ({ navItems }) => {
   const { scrollYProgress } = useScroll();
@@ -23,7 +23,7 @@ export const FloatingNav = ({ navItems }) => {
     if (typeof current === "number") {
       let direction = current - scrollYProgress.getPrevious();
 
-      if (scrollYProgress.get() < 0.05) {
+      if (scrollYProgress.get() < 0.001) {
         setVisible(false);
       } else {
         if (direction < 0) {
@@ -50,7 +50,7 @@ export const FloatingNav = ({ navItems }) => {
           duration: 0.2,
         }}
         className={cn(
-          "flex fixed top-4 inset-x-0 mx-auto rounded-full border border-[#B8B8B8] dark:border-white/[0.2] dark:bg-black bg-[#ECFFFD] shadow-md z-[40] max-w-3xl px-4 sm:px-6 py-2 sm:py-4 items-center justify-between"
+          "flex fixed top-2 inset-x-0 mx-auto rounded-full border border-[#B8B8B8] dark:border-white/[0.2] dark:bg-black bg-[#ECFFFD] shadow-md z-[40] max-w-3xl px-4 sm:px-6 py-2 sm:py-4 items-center justify-between"
         )}
       >
         <div className="flex-shrink-0">
@@ -96,10 +96,10 @@ export const FloatingNav = ({ navItems }) => {
               <DropdownMenuItem><a href="#lingkungan">Lingkungan</a></DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <button className="border text-sm font-medium relative border-[#B8B8B8] dark:border-white/[0.2] text-black dark:text-white px-4 sm:px-6 py-2 rounded-full">
+          <a href="#konsultasi" className="border text-sm font-medium relative border-[#B8B8B8] dark:border-white/[0.2] text-black dark:text-white px-4 sm:px-6 py-2 rounded-full">
             <span>Konsultasi</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-[#FD5852] to-transparent h-px" />
-          </button>
+          </a>
         </div>
       </motion.div>
     </AnimatePresence>

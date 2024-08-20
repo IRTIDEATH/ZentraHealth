@@ -197,7 +197,7 @@ export const CloseIcon = () => {
 const cards = [
   {
     description: "Saraf Terjepit",
-    title: "Kasus Kesehatan Fisik",
+    title: "Kasus Fisik",
     src: "/assets/content/kasusfisik.svg",
     ctaText: "Lihat",
     content: () => {
@@ -233,7 +233,7 @@ const cards = [
   },
   {
     description: "Diabetes",
-    title: "Kasus Kesehatan Gizi",
+    title: "Kasus Gizi",
     src: "/assets/content/kasusgizi.svg",
     ctaText: "Lihat",
     content: () => {
@@ -304,7 +304,7 @@ const cards = [
   },
   {
     description: "Skizofrenia",
-    title: "Kasus Kesehatan Mental",
+    title: "Kasus Mental",
     src: "/assets/content/kasusmental.svg",
     ctaText: "Lihat",
     content: () => {
@@ -339,7 +339,7 @@ const cards = [
   },
   {
     description: "Lautan Sampah",
-    title: "Kasus Kesehatan Lingkungan",
+    title: "Kasus Lingkungan",
     src: "/assets/content/kasuslingkungan.svg",
     ctaText: "Lihat",
     content: () => {
