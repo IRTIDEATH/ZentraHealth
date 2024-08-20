@@ -7,13 +7,21 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import TrashCanvas from "./canvas/Trash";
-import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
 
 const Section3 = () => {
-  const {scrollYProgress} = useScroll()
-
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, 360])
+  const bounce = {
+    initial: { y: 0 },
+    animate: {
+      y: [0, -20, 0],
+      transition: {
+        duration: 0.6,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "loop",
+      },
+    },
+  };
   return (
     <div className="bg-[#ECFFFD]" id="lingkungan">
       <div className="w-full bg-[#FD5852] md:rounded-tr-[5rem] rounded-tr-[4rem]">
@@ -23,16 +31,18 @@ const Section3 = () => {
               src={plus}
               alt=""
               className="w-[90px] h-[90px] md:w-[140px] md:h-[140px] object-contain shadowplus"
-              style={{rotate}}
+              variants={bounce}
+              initial="initial"
+              animate="animate"
             />
           </div>
         </div>
         <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-16">
           <div className="flex flex-col md:flex-row pt-12 items-center justify-between">
             <motion.div className="flex flex-col space-y-5"
-              initial={{x:10, opacity: 0}}
+              initial={{x:-10, opacity: 0}}
               whileInView={{x: 0, opacity: 1}}
-              transition={{duration: 0.5, delay: 0.7}}
+              transition={{duration: 0.5, delay: 0.4}}
             >
               <h1 className="md:text-3xl text-xl text-white font-bold">
                 Sehat Lingkungan

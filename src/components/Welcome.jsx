@@ -1,10 +1,11 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
+// import LogoCanvas from "./canvas/Logo";
 
 const Welcome = () => {
   return (
-    <div className="w-full">
-      <div className="flex flex-col md:px-16 px-7 pt-20 pb-[17rem] md:pb-52 leading-none" id="tentang">
+    <div className="w-full flex flex-col md:flex-row items-center justify-between">
+      <div className="flex flex-col md:px-16 px-7 pt-20 pb-[10rem] md:pb-52 leading-none md:w-1/2" id="tentang">
         <h1 className="text-2xl md:text-4xl font-bold">
           Bersama <span className="text-[#FD5852]">ZentraHealth</span> <br />
           Wujudkan{" "}
@@ -23,7 +24,7 @@ const Welcome = () => {
             />
           </span>
         </h1>
-        <div className="pl-5 py-2 border-l-4 border-black mt-4 text-[#1E1E1E] space-y-4">
+        <div className="pl-5 py-2 border-l-4 border-black mt-3 text-[#1E1E1E] space-y-4">
           <p className="text-wrap leading-5 max-w-[600px] font-normal text-base">
             Kondisi kesehatan pelajar saat ini cukup mengkhawatirkan. Pihak
             Usaha Kesehatan Sekolah membuka program Gerakan Sekolah Sehat (GSS).
@@ -35,6 +36,10 @@ const Welcome = () => {
           <p className="text-wrap font-medium text-lg">“Ayo! Bergerak bersama mewujudkan generasi yang sehat, kuat, cerdas, dan berkarakter!”</p>
         </div>
       </div>
+
+      {/* <div className="w-[400px]">
+        <LogoCanvas/>
+      </div> */}
     </div>
   );
 };

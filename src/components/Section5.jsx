@@ -16,7 +16,7 @@ const Section5 = () => {
           <motion.div
             initial={{opacity: 0, y: 80,}}
             whileInView={{opacity: 1, y: 0,}}
-            transition={{duration: 0.5, delay: 0.7}}
+            transition={{duration: 0.5, delay: 0.5}}
             className="shadowbg flex flex-col p-9 rounded-3xl bg-[#ECFFFD] text-center items-center justify-center space-y-3">
             <h1 className="text-[#1E1E1E] font-bold text-2xl">
               Apa itu... <br />{" "}
@@ -42,7 +42,7 @@ const Section5 = () => {
           <motion.div className="flex flex-col space-y-5"
             initial={{x:-10, opacity: 0}}
             whileInView={{x: 0, opacity: 1}}
-            transition={{duration: 0.5, delay: 0.7}}
+            transition={{duration: 0.5, delay: 0.4}}
           >
             <h1 className="md:text-3xl text-xl text-[#ECFFFD] font-bold">
               Sehat Fisik

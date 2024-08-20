@@ -68,12 +68,19 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  ::selection {
+    background-color: #FD5852; 
+    color: hsl(var(--primary-foreground)); 
+  }
+
 }
 
 
 * {
   scroll-behavior: smooth;
   cursor: url("/public/assets/icon/pluscur.svg"), default;
+  font-family: "Poppins";
 }
 
 .layer1 {

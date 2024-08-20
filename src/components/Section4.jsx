@@ -7,13 +7,21 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import BuahCanvas from "./canvas/Buah";
-import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
 
 const Section4 = () => {
-  const {scrollYProgress} = useScroll()
-
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, 360])
+  const bounce = {
+    initial: { y: 0 },
+    animate: {
+      y: [0, -20, 0],
+      transition: {
+        duration: 0.6,
+        ease: "easeInOut",
+        repeat: Infinity,
+        repeatType: "loop",
+      },
+    },
+  };
   return (
     <div className="bg-[#FD5852]" id="bergizi">
       <div className="w-full bg-[#ECFFFD] md:rounded-tl-[5rem] rounded-tl-[4rem] pb-16 md:pb-28">
@@ -23,7 +31,9 @@ const Section4 = () => {
               src={pluss}
               alt=""
               className="w-[90px] h-[90px] md:w-[140px] md:h-[140px] object-contain shadowplus"
-              style={{rotate}}
+              variants={bounce}
+              initial="initial"
+              animate="animate"
             />
           </div>
         </div>
@@ -32,7 +42,7 @@ const Section4 = () => {
             <motion.div className="flex flex-col space-y-5"
               initial={{x:10, opacity: 0}}
               whileInView={{x: 0, opacity: 1}}
-              transition={{duration: 0.5, delay: 0.7}}
+              transition={{duration: 0.5, delay: 0.4}}
             >
               <h1 className="md:text-3xl text-xl text-[#1E1E1E] font-bold">
                 Sehat Bergizi
