@@ -1,10 +1,9 @@
-import { PhoneOutgoingIcon, UserCircleIcon } from "lucide-react";
 import React from "react";
 
 const Konsultasi = () => {
   return (
     <form className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-5 pt-[60rem] md:pt-[25rem] bg-[#ECFFFD]">
-      <div className="border-b border-gray-900/10 pb-5">
+      <div className="border-b border-gray-900/10 pb-5" id="konsultasi">
         <h2 className="text-2xl font-semibold leading-7 text-[#125872]">
           Layanan Konsultasi
         </h2>
@@ -24,7 +23,6 @@ const Konsultasi = () => {
           <div className="sm:col-span-4">
             <input
               type="number"
-              autoComplete="email"
               placeholder="Usia"
               className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
             />
@@ -46,7 +44,6 @@ const Konsultasi = () => {
           <div className="sm:col-span-4">
             <input
               type="text"
-              autoComplete="email"
               placeholder="Keluhan"
               className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
             />

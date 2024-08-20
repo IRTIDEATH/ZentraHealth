@@ -70,8 +70,10 @@
   }
 }
 
+
 * {
   scroll-behavior: smooth;
+  cursor: url("/public/assets/icon/pluscur.svg"), default;
 }
 
 .layer1 {

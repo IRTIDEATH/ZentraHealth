@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../public/assets/icon/logo.png";
+import logo from "../../public/assets/icon/logo.svg";
 import { MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
@@ -67,7 +67,7 @@ const Footer = () => {
                   <a href="#kasus" className="hover:underline underline-offset-2">Masalah Kesehatan</a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline underline-offset-2">Konsultasi</a>
+                  <a href="#konsultasi" className="hover:underline underline-offset-2">Konsultasi</a>
                 </li>
               </ul>
             </div>
