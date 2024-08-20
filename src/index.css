@@ -78,6 +78,12 @@
   background-image: url("./assets/layer/layerplus.svg");
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .spacer {
   aspect-ratio: 900/200;
   width: 100%;

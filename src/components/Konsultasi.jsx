@@ -17,7 +17,7 @@ const Konsultasi = () => {
             <input
               type="text"
               placeholder="Nama Lengkap"
-              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
             />
           </div>
 
@@ -26,17 +26,20 @@ const Konsultasi = () => {
               type="number"
               autoComplete="email"
               placeholder="Usia"
-              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
             />
           </div>
 
           <div className="sm:col-span-4">
             <select
-              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
             >
-              <option disabled>Jenis Kendala</option>
-              <option>fisik</option>
-              <option>lingkungan</option>
+              <option disabled selected="selected">Jenis Kendala</option>
+              <option>Kesehatan Fisik</option>
+              <option>Kesehatan Gizi</option>
+              <option>Kesehatan Imunisasi</option>
+              <option>Kesehatan Mental</option>
+              <option>Kesehatan Lingkungan</option>
             </select>
           </div>
 
@@ -45,7 +48,7 @@ const Konsultasi = () => {
               type="text"
               autoComplete="email"
               placeholder="Keluhan"
-              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
             />
           </div>
         </div>
