@@ -134,12 +134,12 @@ export function ExpandableCardDemo() {
                 />
               </motion.div>
               <div className="">
-                <motion.h3
+                <motion.h4
                   layoutId={`title-${card.title}-${id}`}
                   className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left"
                 >
                   {card.title}
-                </motion.h3>
+                </motion.h4>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
                   className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
@@ -339,7 +339,7 @@ const cards = [
   },
   {
     description: "Lautan Sampah",
-    title: "Kasus Keseh",
+    title: "Kasus Kesehatan Lingkungan",
     src: "/assets/content/kasuslingkungan.svg",
     ctaText: "Lihat",
     content: () => {

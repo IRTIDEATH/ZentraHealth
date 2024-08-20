@@ -17,7 +17,7 @@ const Section5 = () => {
               Apa itu... <br />{" "}
               <span className="text-[#125872]">Gerakan Sekolah Sehat</span>
             </h1>
-            <p className="text-[#1E1E1E] text-xs md:text-lg text-wrap">
+            <p className="text-[#1E1E1E] text-sm md:text-lg text-wrap">
               <span className="font-bold">Gerakan Sekolah Sehat (GSS),</span> adalah upaya bersama yang dilakukan
               secara terus-menerus terkait pentingnya penerapan Sekolah Sehat
               yang berfokus pada Sehat Bergizi, Sehat Fisik dan Sehat Imunisasi
@@ -28,7 +28,7 @@ const Section5 = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:px-16 px-7 pb-5 pt-32 space-y-7 md:space-y-16">
+      <div className="flex flex-col md:px-16 px-7 pb-5 pt-48 md:pt-32 space-y-7 md:space-y-16">
         <div id="fisik" className="flex flex-col md:flex-row pt-12 items-center justify-between">
           <div className="flex flex-col space-y-5">
             <h1 className="md:text-3xl text-xl text-[#ECFFFD] font-bold">
