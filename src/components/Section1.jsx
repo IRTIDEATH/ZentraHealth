@@ -32,7 +32,11 @@ const Section1 = () => {
         </div>
         <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-16">
           <div className="flex flex-col md:flex-row pt-12 items-center justify-between">
-            <div className="flex flex-col space-y-5">
+            <motion.div className="flex flex-col space-y-5"
+              initial={{x:-10, opacity: 0}}
+              whileInView={{x: 0, opacity: 1}}
+              transition={{duration: 0.5, delay: 0.7}}
+            >
               <h1 className="md:text-3xl text-xl text-[#ECFFFD] font-bold">
                 Sehat Imunisasi
               </h1>
@@ -40,7 +44,7 @@ const Section1 = () => {
                 Meningkatkan capaian imunisasi peserta didik agar mendapat imunisasi dasar yang lengkap,
                 Sehat Imunisasi bertujuan untuk membantu peserta didik mencapai imunisasi dasar yang lengkap.
               </p>
-            </div>
+            </motion.div>
             <div className="w-[400px] mt-6 ml-0 md:mr-6">
               <SuntikanCanvas />
             </div>
@@ -82,8 +86,10 @@ const Section1 = () => {
                   Sasaran, Jenis, dan Jadwal Imunisasi
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                  <img src="/public/assets/content/sehatimun.svg" alt="" srcset="" />
-                  <a href="https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/Sasaran-Imunisasi-1-1536x864.png" className="text-gray-500 italic">https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/Sasaran-Imunisasi-1-1536x864.png</a>
+                  <span>
+                    <img src="/public/assets/content/sehatimun.svg" alt="" />
+                    <a href="https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/Sasaran-Imunisasi-1-1536x864.png" className="text-gray-500 italic">https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/Sasaran-Imunisasi-1-1536x864.png</a>
+                  </span>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

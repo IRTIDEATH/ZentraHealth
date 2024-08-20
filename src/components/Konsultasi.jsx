@@ -8,31 +8,30 @@ const Konsultasi = () => {
           Layanan Konsultasi
         </h2>
         <p className="mt-2 text-base leading-6 text-[#737373] max-w-[500px]">
-            Anda memiliki masalah dengan kesehatan? Kami siap memberikan solusi terbaik melalui form di bawah ini!
+          Anda memiliki masalah dengan kesehatan? Kami siap memberikan solusi
+          terbaik melalui form di bawah ini!
         </p>
 
-        <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
-          <div className="sm:col-span-4">
+        <div className="max-w-2xl mt-10">
+          <div className="mb-5">
             <input
               type="text"
               placeholder="Nama Lengkap"
-              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full block w-full p-2.5"
             />
           </div>
-
-          <div className="sm:col-span-4">
+          <div className="mb-5">
             <input
               type="number"
               placeholder="Usia"
-              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full block w-full p-2.5"
             />
           </div>
-
-          <div className="sm:col-span-4">
+          <div className="mb-5">
             <select
-              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full block w-full p-2.5"
             >
-              <option disabled selected="selected">Jenis Kendala</option>
+              <option disabled selected="selected">Jenis Kesehatan</option>
               <option>Kesehatan Fisik</option>
               <option>Kesehatan Gizi</option>
               <option>Kesehatan Imunisasi</option>
@@ -40,13 +39,12 @@ const Konsultasi = () => {
               <option>Kesehatan Lingkungan</option>
             </select>
           </div>
-
-          <div className="sm:col-span-4">
-            <input
-              type="text"
-              placeholder="Keluhan"
-              className="block w-full rounded-full border-0 py-3 px-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
-            />
+          <div className="mb-5">
+            <textarea
+              rows="1"
+              className="block p-4 w-full text-sm text-gray-900 bg-gray-50 rounded-full border border-gray-300"
+              placeholder="Keluhan..."
+            ></textarea>
           </div>
         </div>
       </div>
@@ -54,7 +52,7 @@ const Konsultasi = () => {
       <div className="flex items-center justify-start">
         <button
           type="submit"
-          className="rounded-full bg-[#125872] px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="rounded-full bg-[#125872] px-5 py-2 text-sm font-semibold text-white shadow-sm"
         >
           Kirim
         </button>

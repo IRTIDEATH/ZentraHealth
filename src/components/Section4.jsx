@@ -29,7 +29,11 @@ const Section4 = () => {
         </div>
         <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-16">
           <div className="flex flex-col md:flex-row-reverse pt-12 items-center justify-between">
-            <div className="flex flex-col space-y-5">
+            <motion.div className="flex flex-col space-y-5"
+              initial={{x:10, opacity: 0}}
+              whileInView={{x: 0, opacity: 1}}
+              transition={{duration: 0.5, delay: 0.7}}
+            >
               <h1 className="md:text-3xl text-xl text-[#1E1E1E] font-bold">
                 Sehat Bergizi
               </h1>
@@ -37,7 +41,7 @@ const Section4 = () => {
               Meningkatkan kesehatan peserta didik melalui edukasi pola makan yang tepat dan bergizi.
               Guna meningkatkan derajat kesehatan peserta didik, maka perlu diterapkannya pola makan yang tepat dan konsumsi makanan bergizi. Bagaimana langkah yang perlu kita gerakkan untuk mencapai kondisi kesehatan peserta didik yang ideal?
               </p>
-            </div>
+            </motion.div>
             <div className="w-[400px] mt-6">
               <BuahCanvas/>
             </div>
@@ -84,14 +88,15 @@ const Section4 = () => {
                 Komponen Kantin Sehat
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                <img src="/public/assets/content/isipiring2.svg" alt="" srcset="" />
-                <a href="https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/4-pilar-kantin-sehat-sekolah-1024x1024.png" class="text-gray-500 italic">https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/4-pilar-kantin-sehat-sekolah-1024x1024.png
-                </a><br/><br/>
-                    ● Komitmen dan Manajemen Sekolah : Memonitor konsumsi jajanan yang disediakan di kantin sekolah.
-                <br/>● Sumber Daya Manusia : Para penjual memiliki pengetahuan serta keterampilan mengelola kantin dan jajanan sehat di sekolah.
-                <br/>● Sarana dan Prasarana : Menjamin kebersihan peralatan makan di kantin sekolah serta lingkungan kantin.
-                <br/>● Mutu Pangan : Jajanan yang dijual wajib memenuhi standar aman, sehat, serta bergizi.
-
+                  <span>
+                    <img src="/public/assets/content/isipiring2.svg" alt="" />
+                    <a href="https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/4-pilar-kantin-sehat-sekolah-1024x1024.png" class="text-gray-500 italic">https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/4-pilar-kantin-sehat-sekolah-1024x1024.png
+                    </a><br/><br/>
+                        ● Komitmen dan Manajemen Sekolah : Memonitor konsumsi jajanan yang disediakan di kantin sekolah.
+                    <br/>● Sumber Daya Manusia : Para penjual memiliki pengetahuan serta keterampilan mengelola kantin dan jajanan sehat di sekolah.
+                    <br/>● Sarana dan Prasarana : Menjamin kebersihan peralatan makan di kantin sekolah serta lingkungan kantin.
+                    <br/>● Mutu Pangan : Jajanan yang dijual wajib memenuhi standar aman, sehat, serta bergizi.
+                  </span>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

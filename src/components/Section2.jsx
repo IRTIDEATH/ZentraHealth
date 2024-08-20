@@ -29,14 +29,18 @@ const Section2 = () => {
         </div>
         <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-16">
           <div className="flex flex-col md:flex-row-reverse pt-12 items-center justify-between">
-            <div className="flex flex-col space-y-5">
+            <motion.div className="flex flex-col space-y-5"
+              initial={{x:10, opacity: 0}}
+              whileInView={{x: 0, opacity: 1}}
+              transition={{duration: 0.5, delay: 0.7}}
+            >
               <h1 className="md:text-3xl text-xl text-[#1E1E1E] font-bold">
                 Sehat Mental
               </h1>
               <p className="text-[#1E1E1E] md:text-xl text-base text-start font-normal text-wrap md:w-[480px]">
               Mengedukasi para peserta didik dan pihak sekolah terkait pentingnya menjaga mental yang sehat di kalangan anak-anak hingga remaja. Kesehatan mental yang baik adalah kondisi ketika batin kita berada dalam keadaan tentram dan tenang, sehingga memungkinkan kita untuk menikmati kehidupan sehari-hari. Orang yang kesehatan mentalnya terganggu akan mengalami gangguan suasana hati, kemampuan berpikir, serta kendali emosi yang bisa mengarah pada perilaku buruk.
               </p>
-            </div>
+            </motion.div>
             <div className="w-[400px] mt-6 ml-0 md:ml-4">
               <HeartBrainCanvas/>
             </div>
@@ -91,8 +95,10 @@ const Section2 = () => {
                 Gangguan Kecemasan
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
-                <img src="/public/assets/content/sehatmental.svg" alt="" srcset="" />
-                  <a href="https://data.goodstats.id/statistic/1-dari-3-remaja-indonesia-alami-masalah-kesehatan-mental-GkFkh" class="text-gray-500 italic">https://data.goodstats.id/statistic/1-dari-3-remaja-indonesia-alami-masalah-kesehatan-mental-GkFkh</a><br/><br/> 
+                  <span>
+                    <img src="/public/assets/content/sehatmental.svg" alt=""  />
+                    <a href="https://data.goodstats.id/statistic/1-dari-3-remaja-indonesia-alami-masalah-kesehatan-mental-GkFkh" class="text-gray-500 italic">https://data.goodstats.id/statistic/1-dari-3-remaja-indonesia-alami-masalah-kesehatan-mental-GkFkh</a><br/><br/> 
+                  </span>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
