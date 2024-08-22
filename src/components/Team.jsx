@@ -56,7 +56,7 @@ const Team = () => {
                       <div className="flex flex-col items-center justify-center space-y-4">
                         <div className="relative flex flex-col items-center justify-end">
                           <Avatar>
-                            <AvatarImage src="https://github.com/shadcn.png" />
+                            <AvatarImage src={datac.avatarUrl} />
                             <AvatarFallback>ZH</AvatarFallback>
                           </Avatar>
                           <Badge className="absolute z-10">{datac.badge}</Badge>

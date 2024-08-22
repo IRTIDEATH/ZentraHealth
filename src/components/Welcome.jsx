@@ -1,11 +1,10 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-// import LogoCanvas from "./canvas/Logo";
 
 const Welcome = () => {
   return (
     <div className="w-full flex flex-col md:flex-row items-center justify-between">
-      <div className="flex flex-col md:px-16 px-7 pt-20 pb-[10rem] md:pb-52 leading-none md:w-1/2" id="tentang">
+      <div className="flex flex-col md:px-16 px-7 pt-20 pb-[17rem] md:pb-52 leading-none md:w-1/2" id="tentang">
         <h1 className="text-2xl md:text-4xl font-bold">
           Bersama <span className="text-[#FD5852]">ZentraHealth</span> <br />
           Wujudkan{" "}

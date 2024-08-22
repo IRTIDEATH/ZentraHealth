@@ -79,7 +79,7 @@
 
 * {
   scroll-behavior: smooth;
-  cursor: url("/public/assets/icon/pluscur.svg"), default;
+  cursor: url("/assets/icon/pluscur.svg"), default;
   font-family: "Poppins";
 }
 

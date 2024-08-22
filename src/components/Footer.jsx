@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../public/assets/icon/logo.svg";
+import logo from "/assets/icon/logo.svg";
 import { MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
