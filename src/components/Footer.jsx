@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 text-xs gap-y-8 w-full md:w-[60%] space-x-5">
+          <div className="grid grid-cols-2 text-xs md:text-sm gap-y-8 w-full md:w-[60%] space-x-5">
             <div className="space-y-3 text-start md:text-center text-wrap">
               <h3 className=" uppercase font-bold">Tautan Halaman</h3>
               <ul className="space-y-1">
