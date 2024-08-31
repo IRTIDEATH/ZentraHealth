@@ -1,6 +1,6 @@
 import React from "react";
 
-import { motion } from "framer-motion";
+import { easeIn, easeInOut, motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -10,7 +10,7 @@ const Hero = () => {
           className="text-[4rem] md:text-[5rem] text-[#ECFFFD] font-bold"
           initial={{ y: -100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.9, delay: 0.5 }}
+          transition={{ duration: 0.7, delay: 0.7, ease: easeInOut }}
           viewport={{ once: true }}
         >
           Zentra
@@ -19,7 +19,7 @@ const Hero = () => {
           className="text-[4rem] md:text-[5rem] font-medium text-[#ECFFFD]"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.9, delay: 0.5 }}
+          transition={{ duration: 0.7, delay: 0.7, ease: easeInOut }}
           viewport={{ once: true }}
         >
           Health

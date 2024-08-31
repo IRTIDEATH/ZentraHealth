@@ -1,4 +1,3 @@
-import About from "./components/About";
 import Cases from "./components/Cases";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -13,9 +12,8 @@ import Welcome from "./components/Welcome";
 
 function App() {
   return (
-    <div className="w-full overflow-hidden">
+    <main className="w-full overflow-hidden">
       <Hero />
-      {/* <About/> */}
       <Welcome />
       <Section5 />
       <Section4 />
@@ -26,7 +24,7 @@ function App() {
       <Konsultasi/>
       <Team/>
       <Footer/>
-    </div>
+    </main>
   );
 }
 

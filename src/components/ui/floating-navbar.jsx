@@ -60,8 +60,9 @@ export const FloatingNav = ({ navItems }) => {
           {navItems.map((navItem, idx) => (
             <a
               key={`link=${idx}`}
+              href={navItem.link}
               className={cn(
-                "relative dark:text-neutral-50 items-center flex text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
+                "relative dark:text-neutral-50 text-neutral-600 dark:hover:text-neutral-300 hover:text-[#FD5852] transition-colors items-center flex"
               )}
             >
               <span className="hidden sm:block text-sm cursor-pointer">
@@ -70,7 +71,7 @@ export const FloatingNav = ({ navItems }) => {
             </a>
           ))}
           <DropdownMenu modal={false}>
-            <DropdownMenuTrigger className="text-sm font-normal flex items-center">
+            <DropdownMenuTrigger className="text-sm font-normal flex items-center hover:text-[#FD5852]">
               Konten
               <svg
                 className="w-4 h-4 ml-1 transition-transform transform"
@@ -96,9 +97,11 @@ export const FloatingNav = ({ navItems }) => {
               <DropdownMenuItem><a href="#lingkungan">Lingkungan</a></DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <a href="#konsultasi" className="border text-sm font-medium relative border-[#B8B8B8] dark:border-white/[0.2] text-black dark:text-white px-4 sm:px-6 py-2 rounded-full">
+          <a
+            href="#konsultasi"
+            className="border text-sm font-medium relative border-[#B8B8B8] dark:border-white/[0.2] text-black dark:text-white px-4 sm:px-6 py-2 rounded-full hover:text-[#FD5852] transition-colors"
+          >
             <span>Konsultasi</span>
-            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-[#FD5852] to-transparent h-px" />
           </a>
         </div>
       </motion.div>

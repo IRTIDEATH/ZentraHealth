@@ -94,7 +94,7 @@ const Section1 = () => {
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
                   <span>
-                    <img src="/public/assets/content/sehatimun.svg" alt="" />
+                    <img src="/assets/content/sehatimun.svg" alt="" />
                     <a href="https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/Sasaran-Imunisasi-1-1536x864.png" className="text-gray-500 italic">https://ditpsd.kemdikbud.go.id/kss/wp-content/uploads/2023/05/Sasaran-Imunisasi-1-1536x864.png</a>
                   </span>
                 </AccordionContent>

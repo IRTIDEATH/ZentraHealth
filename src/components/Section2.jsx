@@ -106,7 +106,7 @@ const Section2 = () => {
                 </AccordionTrigger>
                 <AccordionContent className="md:text-lg text-sm">
                   <span>
-                    <img src="/public/assets/content/sehatmental.svg" alt=""  />
+                    <img src="/assets/content/sehatmental.svg" alt=""  />
                     <a href="https://data.goodstats.id/statistic/1-dari-3-remaja-indonesia-alami-masalah-kesehatan-mental-GkFkh" class="text-gray-500 italic">https://data.goodstats.id/statistic/1-dari-3-remaja-indonesia-alami-masalah-kesehatan-mental-GkFkh</a><br/><br/> 
                   </span>
                 </AccordionContent>

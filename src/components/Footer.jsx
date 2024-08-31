@@ -5,12 +5,12 @@ import { MapPin, Phone } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-[#ECFFFD]">
-      <div className="px-6 divide-y divide-[#D1D0D0] bg-[#125872] text-[#ECFFFD] rounded-t-[3rem]">
-        <div className="container mx-auto flex flex-col justify-between py-10 space-y-8 lg:flex-row lg:space-y-0">
-          <div className="lg:w-1/3 flex flex-col space-y-8">
+      <div className="px-3 md:px-6 divide-y divide-[#D1D0D0] bg-[#125872] text-[#ECFFFD] rounded-t-[3rem]">
+        <div className="container mx-auto flex flex-col justify-between md:items-start items-center py-10 space-x-0 md:space-x-12 space-y-8 md:flex-row md:space-y-0">
+          <div className="md:w-1/3 flex flex-col space-y-8">
             <a
               href="#"
-              className="flex justify-center space-x-3 lg:justify-start"
+              className="flex justify-center md:justify-start space-x-3 lg:justify-start"
             >
               <div className="flex items-center justify-center w-12 h-12">
                 <img src={logo} alt="" />
@@ -19,10 +19,10 @@ const Footer = () => {
                 Zentra<span className="font-medium">Health</span>
               </span>
             </a>
-            <div className="flex flex-col space-y-3">
+            <div className="flex flex-col space-y-3 text-wrap">
               <h1 className="text-sm">SMK Negeri 46 Jakarta</h1>
               <div className="flex space-x-3">
-                <MapPin />
+                <MapPin className="text-2xl" />
                 <a href="https://www.google.com/maps/place/SMK+Negeri+46+Jakarta/@-6.2170907,106.8838618,15z/data=!4m6!3m5!1s0x2e69f36a76939ce9:0x1dd69348f251fa2a!8m2!3d-6.2170907!4d106.8838618!16s%2Fg%2F1220__b6?entry=ttu">
                   <p className="text-xs">
                     B7, Jl. Cipinang Pulo No.19, RT.7/RW.14, North Cipinang
@@ -38,8 +38,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 text-sm gap-x-12 md:gap-x-80 gap-y-8 sm:grid-cols-2">
-            <div className="space-y-3 text-start md:text-center">
+          <div className="grid grid-cols-2 text-xs gap-y-8 w-full md:w-[60%] space-x-5">
+            <div className="space-y-3 text-start md:text-center text-wrap">
               <h3 className=" uppercase font-bold">Tautan Halaman</h3>
               <ul className="space-y-1">
                 <li>
@@ -71,7 +71,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="space-y-3 text-start md:text-end">
+            <div className="space-y-3 text-start md:text-end text-wrap">
               <h3 className="uppercase font-bold">Sumber & Kredit</h3>
               <ul className="space-y-1">
                 <li>
