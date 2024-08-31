@@ -2,7 +2,7 @@ import React from "react";
 
 const Konsultasi = () => {
   return (
-    <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-5 pt-[50rem] md:pt-[20rem] bg-[#ECFFFD]">
+    <div className="flex flex-col md:px-16 px-7 py-12 space-y-7 md:space-y-5 pt-[55rem] md:pt-[20rem] bg-[#ECFFFD]">
       <div className="pt-12 border-b border-gray-900/10 pb-5" id="konsultasi">
         <h2 className="text-2xl font-semibold leading-7 text-[#125872]">
           Layanan Konsultasi

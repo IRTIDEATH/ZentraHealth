@@ -119,6 +119,11 @@ const Footer = () => {
                     Kredit aset 3D : ryann_caesar
                   </a>
                 </li>
+                <li>
+                  <a href="https://www.figma.com/design/i0vyIyIhWM4zdWBAVFvR4F/ZentraHealth?node-id=0-1&node-type=CANVAS&t=Zd5lC6PFQEV9hd3i-0" className="hover:underline underline-offset-2">
+                    Figma : ZentraHealth
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
